@@ -1,0 +1,506 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>python爬虫学习归档 | 以西的小窝</title><meta name="keywords" content="学习指南,python,webspider"><meta name="author" content="以西"><meta name="copyright" content="以西"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="爬虫，从本质上来说，就是利用程序在网上拿到对自身有价值的数据 以百度为例，在搜索的时候仔细看，会发现每个搜索结果下面都有一个百度快照 点击百度快照，会发现网址的开头有baidu这个词，也就是说这个网页属于百度 这就是因为百度会源源不断地把千千万万个网站爬取下来，存储在自己的服务器上 而在百度搜索的本质就是在它的服务器上搜索信息，搜索到的结果是一些超链接，在超链接跳转之后就可以访问其它网站了 一般来">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python爬虫学习归档">
+<meta property="og:url" content="https://y1xi.fun/py-spider/index.html">
+<meta property="og:site_name" content="以西的小窝">
+<meta property="og:description" content="爬虫，从本质上来说，就是利用程序在网上拿到对自身有价值的数据 以百度为例，在搜索的时候仔细看，会发现每个搜索结果下面都有一个百度快照 点击百度快照，会发现网址的开头有baidu这个词，也就是说这个网页属于百度 这就是因为百度会源源不断地把千千万万个网站爬取下来，存储在自己的服务器上 而在百度搜索的本质就是在它的服务器上搜索信息，搜索到的结果是一些超链接，在超链接跳转之后就可以访问其它网站了 一般来">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic.imgdb.cn/item/627231530947543129e687bb.jpg">
+<meta property="article:published_time" content="2022-03-27T09:27:44.000Z">
+<meta property="article:modified_time" content="2022-10-06T10:19:45.066Z">
+<meta property="article:author" content="以西">
+<meta property="article:tag" content="学习指南">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="webspider">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/627231530947543129e687bb.jpg"><link rel="shortcut icon" href="https://pic.imgdb.cn/item/627238140947543129f6fccb.jpg"><link rel="canonical" href="https://y1xi.fun/py-spider/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 以西","link":"链接: ","source":"来源: 以西的小窝","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"top-right"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'python爬虫学习归档',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-10-06 18:19:45'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/mycss.css"><link rel="stylesheet" href="/css/footercss.css"><link rel="stylesheet" href="/css/background.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="以西的小窝" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/627238140947543129f6fccb.jpg" onerror="onerror=null;src='null'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">33</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">47</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">20</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/broken-thoughts/"><i class="fa-fw fas fa-blog"></i><span> 碎碎念</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/myself/"><i class="fa-fw fas fa-cat"></i><span> Myself</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.imgdb.cn/item/627231530947543129e687bb.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">以西的小窝</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/broken-thoughts/"><i class="fa-fw fas fa-blog"></i><span> 碎碎念</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/myself/"><i class="fa-fw fas fa-cat"></i><span> Myself</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">python爬虫学习归档</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-03-27T09:27:44.000Z" title="发表于 2022-03-27 17:27:44">2022-03-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-06T10:19:45.066Z" title="更新于 2022-10-06 18:19:45">2022-10-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BC%96%E7%A8%8B/python/">python</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">7.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>26分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>爬虫，从本质上来说，就是利用程序在网上拿到对自身有价值的数据</p>
+<p>以百度为例，在搜索的时候仔细看，会发现每个搜索结果下面都有一个百度快照</p>
+<p>点击百度快照，会发现网址的开头有baidu这个词，也就是说这个网页属于百度</p>
+<p>这就是因为百度会源源不断地把千千万万个网站爬取下来，存储在自己的服务器上</p>
+<p>而在百度搜索的本质就是在它的服务器上搜索信息，搜索到的结果是一些超链接，在超链接跳转之后就可以访问其它网站了</p>
+<p>一般来说，传统的拿数据的做法是：通过浏览器上网，手动下载所需要的数据。其实在这背后，浏览器帮助我们做了很多看不见的工作</p>
+<h1 id="浏览器的工作原理"><a href="#浏览器的工作原理" class="headerlink" title="浏览器的工作原理"></a>浏览器的工作原理</h1><p>客户端的请求➡浏览器➡服务器➡返回给浏览器➡客户端</p>
+<p>在客户端和浏览器交流的过程中，浏览器的交流对象不只有客户端，还有【服务器】。可以服务器理解为一个超级电脑，它可以计算和存储大量数据，并且在互联网中互相传输数据。</p>
+<ul>
+<li><p>首先，在浏览器的地址栏输入网址（也可以叫URL(统一资源定位符)）</p>
+</li>
+<li><p>然后，浏览器向服务器传达了想访问某个网页的需求，这个过程就叫做【请求】</p>
+</li>
+<li><p>紧接着，服务器把目标网站数据发送给浏览器，这个过程叫做【响应】</p>
+</li>
+<li><p>当服务器把数据响应给浏览器之后，浏览器并不会直接把数据丢返还给客户端，因为这些数据是用计算机的语言写的，浏览器还要把这些数据转译成客户端能看得懂的样子，这是浏览器做的另一项工作【解析数据】</p>
+</li>
+<li><p>我们就可以在客户端拿到的数据中，挑选出有用的数据，这是【提取数据】</p>
+</li>
+<li><p>最后把这些有用的数据保存好，这是【存储数据】</p>
+</li>
+</ul>
+<p>即浏览器对服务器的请求，服务器对浏览器的响应</p>
+<h1 id="爬虫的工作原理"><a href="#爬虫的工作原理" class="headerlink" title="爬虫的工作原理"></a>爬虫的工作原理</h1><ul>
+<li>首先，爬虫可以模拟浏览器去向服务器发出请求，等待服务器响应，【获取数据】</li>
+<li>其次，等服务器响应后，爬虫程序还可以代替浏览器帮我们解析数据，【解析数据】</li>
+<li>接着，爬虫可以根据我们设定的规则批量提取相关数据，而不需要我们去手动提取，【提取数据】</li>
+<li>最后，爬虫可以批量地把数据存储到本地，【存储数据】</li>
+</ul>
+<p>即爬虫程序对服务器的请求，服务器对爬虫程序的响应</p>
+<h1 id="爬虫的红线"><a href="#爬虫的红线" class="headerlink" title="爬虫的红线"></a>爬虫的红线</h1><p>通常情况下，服务器不太会在意小爬虫，但是，服务器会拒绝频率很高的大型爬虫和恶意爬虫，因为这会给服务器带来极大的压力或伤害</p>
+<p>不过，服务器在通常情况下，对搜索引擎是欢迎的态度（谷歌和百度的核心技术之一就是爬虫）。当然，这是有条件的，通常这些条件会写在<code>robots</code>协议里</p>
+<p><code>robots</code>协议是互联网爬虫的一项公认的道德规范，它的全称是“网络爬虫排除标准”（robots exclusion protocol），这个协议用来告诉爬虫，哪些页面是可以抓取的，哪些不可以</p>
+<p>截取了一部分淘宝的robots协议 （ <a target="_blank" rel="noopener" href="http://www.taobao.com/robots.txt%EF%BC%89">http://www.taobao.com/robots.txt）</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">User-agent:  Baiduspider # 百度爬虫</span><br><span class="line">Allow:  /article # 允许访问 article </span><br><span class="line">Allow:  /oshtml # 允许访问 oshtml </span><br><span class="line">Allow:  /ershou # 允许访问 ershou </span><br><span class="line">Allow: /$ # 允许访问根目录，即淘宝主页</span><br><span class="line">Disallow:  /product/ # 禁止访问product文件夹下面的所有文件，但是product文件夹本身允许被访问</span><br><span class="line">Disallow:  / # 禁止访问除 Allow 规定页面之外的其他所有页面</span><br><span class="line"></span><br><span class="line">User-Agent:  Googlebot # 谷歌爬虫</span><br><span class="line">Allow:  /article</span><br><span class="line">Allow:  /oshtml</span><br><span class="line">Allow:  /product # 允许访问product文件夹及product文件夹下面的所有文件</span><br><span class="line">Allow:  /spu</span><br><span class="line">Allow:  /dianpu</span><br><span class="line">Allow:  /oversea</span><br><span class="line">Allow:  /list</span><br><span class="line">Allow:  /ershou</span><br><span class="line">Allow: /$</span><br><span class="line">Disallow:  / # 禁止访问除 Allow 规定页面之外的其他所有页面</span><br><span class="line"></span><br><span class="line">User-Agent:  * # 其他爬虫</span><br><span class="line">Disallow:  / # 禁止访问所有页面</span><br></pre></td></tr></table></figure>
+
+<p>目前通用的规范就是<code>robots</code>协议，所以在爬取网络中的信息时，应该有意识地去遵守这个协议。</p>
+<h1 id="获取数据"><a href="#获取数据" class="headerlink" title="获取数据"></a>获取数据</h1><h2 id="requests模块"><a href="#requests模块" class="headerlink" title="requests模块"></a>requests模块</h2><p><code>requests</code>库可以帮我们下载网页源代码、文本、图片，甚至是音频。“下载”本质上是向服务器发送请求并得到响应。</p>
+<h3 id="requests-get"><a href="#requests-get" class="headerlink" title="requests.get( )"></a>requests.get( )</h3><p><code>requests.get()</code>的具体用法如下</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 引入requests库</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="comment"># requests.get是在调用requests库中的get()方法，它向服务器发送了一个请求，括号里的参数是你需要的数据所在的网址，然后服务器对请求作出了响应。</span></span><br><span class="line"><span class="comment"># 我们把这个响应返回的结果赋值给变量res</span></span><br><span class="line">res = requests.get(<span class="string">&#x27;URL&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="Response对象的常用属性"><a href="#Response对象的常用属性" class="headerlink" title="Response对象的常用属性"></a>Response对象的常用属性</h3><p>Python是一门面向对象编程的语言，而在爬虫中，理解数据是什么对象是非常、特别、以及极其重要的一件事</p>
+<p>因为只有知道了数据是什么对象，才知道对象有什么属性和方法可供后续操作</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests </span><br><span class="line"></span><br><span class="line">res = requests.get(<span class="string">&#x27;https://res.pandateacher.com/2018-12-18-10-43-07.png&#x27;</span>) </span><br><span class="line"><span class="comment"># 打印变量res的数据类型</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(res))</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>&lt;<span class="class"><span class="keyword">class</span> &#x27;<span class="title">requests</span>.<span class="title">models</span>.<span class="title">Response</span>&#x27;&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>res是一个对象，属于<code>requests.models.Response</code>类</p>
+<table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">response.status_code</td>
+<td align="center">检查请求是否成功</td>
+</tr>
+<tr>
+<td align="center">response.content</td>
+<td align="center">将response对象转换成二进制数据</td>
+</tr>
+<tr>
+<td align="center">response.text</td>
+<td align="center">将response对象转换成字符串数据</td>
+</tr>
+<tr>
+<td align="center">response.encoding</td>
+<td align="center">定义response对象的编码</td>
+</tr>
+</tbody></table>
+<h4 id="response-status-code"><a href="#response-status-code" class="headerlink" title="response.status_code"></a>response.status_code</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests </span><br><span class="line"></span><br><span class="line">res = requests.get(<span class="string">&#x27;https://res.pandateacher.com/2018-12-18-10-43-07.png&#x27;</span>) </span><br><span class="line"><span class="comment"># 打印变量res的响应状态码，以检查请求是否成功</span></span><br><span class="line"><span class="built_in">print</span>(res.status_code)</span><br><span class="line"><span class="comment"># 它可以用来检查requests请求是否得到了成功的响应，终端结果显示了200，即代表服务器同意了请求，并返回了数据给客户端</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">200</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="常用响应状态码解释"><a href="#常用响应状态码解释" class="headerlink" title="常用响应状态码解释"></a>常用响应状态码解释</h5><table>
+<thead>
+<tr>
+<th align="center">响应状态码</th>
+<th align="center">说明</th>
+<th align="center">举例</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1xx</td>
+<td align="center">请求收到</td>
+<td align="center">100</td>
+<td align="center">继续提出请求</td>
+</tr>
+<tr>
+<td align="center">2xx</td>
+<td align="center">请求成功</td>
+<td align="center">200</td>
+<td align="center">成功</td>
+</tr>
+<tr>
+<td align="center">3xx</td>
+<td align="center">重定向</td>
+<td align="center">305</td>
+<td align="center">应使用代理访问</td>
+</tr>
+<tr>
+<td align="center">4xx</td>
+<td align="center">客户端错误</td>
+<td align="center">403</td>
+<td align="center">禁止访问</td>
+</tr>
+<tr>
+<td align="center">5xx</td>
+<td align="center">服务器端错误</td>
+<td align="center">503</td>
+<td align="center">服务器不可用</td>
+</tr>
+</tbody></table>
+<h4 id="response-content"><a href="#response-content" class="headerlink" title="response.content"></a>response.content</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 引入requests库</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="comment"># 发出请求，并把返回的结果放在变量res中</span></span><br><span class="line">res = requests.get(<span class="string">&#x27;https://res.pandateacher.com/2018-12-18-10-43-07.png&#x27;</span>)</span><br><span class="line"><span class="comment"># 把Reponse对象的内容以二进制数据的形式返回</span></span><br><span class="line">pic = res.content</span><br><span class="line"><span class="comment"># 新建了一个文件ppt.jpg，这里的文件没加路径，它会被保存在程序运行的当前目录下。</span></span><br><span class="line"><span class="comment"># 图片内容需要以二进制wb读写,学习open()函数已经接触</span></span><br><span class="line">photo = <span class="built_in">open</span>(<span class="string">&#x27;ppt.jpg&#x27;</span>,<span class="string">&#x27;wb&#x27;</span>)</span><br><span class="line"><span class="comment"># 获取pic的二进制内容</span></span><br><span class="line">photo.write(pic) </span><br><span class="line"><span class="comment"># 关闭文件</span></span><br><span class="line">photo.close()</span><br></pre></td></tr></table></figure>
+
+<h4 id="response-text"><a href="#response-text" class="headerlink" title="response.text"></a>response.text</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 引用requests库</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载《三国演义》第一回，得到一个对象，它被命名为res</span></span><br><span class="line"><span class="comment"># https://localprod.pandateacher.com/python-manuscript/crawler-html/sanguo.md《三国演义》内容</span></span><br><span class="line">res = requests.get(<span class="string">&#x27;https://localprod.pandateacher.com/python-manuscript/crawler-html/sanguo.md&#x27;</span>)</span><br><span class="line"><span class="comment"># 把Response对象的内容以字符串的形式返回</span></span><br><span class="line">novel=res.text</span><br><span class="line"><span class="built_in">print</span>(novel)</span><br></pre></td></tr></table></figure>
+
+<h4 id="response-encoding"><a href="#response-encoding" class="headerlink" title="response.encoding"></a>response.encoding</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 引用requests库</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载《三国演义》第一回，我们得到一个对象，它被命名为res</span></span><br><span class="line">res = requests.get(<span class="string">&#x27;https://localprod.pandateacher.com/python-manuscript/crawler-html/sanguo.md&#x27;</span>)</span><br><span class="line"><span class="comment"># 定义Response对象的编码为utf-8</span></span><br><span class="line">res.encoding=<span class="string">&#x27;utf-8&#x27;</span></span><br><span class="line"><span class="comment"># 编解码要共享同一种编码类型</span></span><br><span class="line"><span class="comment"># 总的来说，遇到乱码问题，才考虑用res.encoding</span></span><br><span class="line"><span class="comment"># 把Response对象的内容以字符串的形式返回</span></span><br><span class="line">novel=res.text</span><br><span class="line"><span class="built_in">print</span>(novel)</span><br></pre></td></tr></table></figure>
+
+<h1 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h1><p>HTML是用来描述网页的一种语言，英文全称是Hyper Text Markup Language，也叫超文本标记语言</p>
+<p><strong>标记语言</strong>就是把<strong>文本</strong>和文本以外的相关<strong>信息</strong>（例如大小，高度，颜色，位置等）组合在一起的语言</p>
+<p>用<code>url</code>向服务器发出请求的时候，服务返回的是一个带有<code>HTML</code>文档的数据包，经过浏览器解析，网页才能在窗口上正常呈现</p>
+<h2 id="HTML的组成"><a href="#HTML的组成" class="headerlink" title="HTML的组成"></a>HTML的组成</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span>    # 网页头具体内容</span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        test		# 网页体具体内容</span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>第一行<code>&lt;!DOCTYPE html&gt;</code>是一个全局声明，目的是告诉浏览器，现在处理的这个文档是<code>HTML</code>文档</li>
+<li>声明过后，迎来了HTML代码的主框架，一共有<strong>三组</strong>基本元素，分别是html元素（<code>&lt;html&gt;&lt;/html&gt;</code>），head头元素（<code>&lt;head&gt;&lt;/head&gt;</code>），和body主体元素（<code>&lt;body&gt;&lt;/body&gt;</code>）</li>
+<li>它们成对出现，都带有尖括号（<code>&lt;&gt;</code>&amp;<code>&lt;/&gt;</code>），分别代表着元素的<strong>起点</strong>和<strong>终点</strong></li>
+<li>最外层是<code>&lt;html&gt;</code>(<strong>文档起点</strong>)<code>&lt;/html&gt;</code>（<strong>文档终点</strong>），它的作用是标记文档的起始位置和终止位置，从层级上来看，显然是老大，将<code>&lt;head&gt;&lt;/head&gt;</code>（头部）和<code>&lt;body&gt;&lt;/body&gt;</code>（主题）包裹了起来</li>
+</ul>
+<h2 id="层级结构"><a href="#层级结构" class="headerlink" title="层级结构"></a>层级结构</h2><p>HTML和python一样，<strong>【有缩进】</strong>，这缩进将文档之间的<strong>结构层级</strong>安排地明明白白</p>
+<p>譬如，头部元素（<code>&lt;head&gt;&lt;/head&gt;</code>）内，一般会被用来设置网页的编码，添加网页标签的小logo，小标题，外部文件引用（就好像python会用<code>import</code>引用别的模块）等。</p>
+<p>其次，HTML文档的主体元素（<code>&lt;body&gt;&lt;/body&gt;</code>）负责定义网页窗口内的所有内容</p>
+<p>主体元素（<code>&lt;body&gt;&lt;/body&gt;</code>）的内部有div元素（<code>&lt;div&gt;&lt;/div&gt;</code>），div元素（<code>&lt;div&gt;&lt;/div&gt;</code>）内部也有其他元素：图片元素（<code>&lt;img/&gt;</code>）和表单元素（<code>&lt;form&gt;&lt;/form&gt;</code>），表单元素（<code>&lt;form&gt;&lt;/form&gt;</code>）也有其他元素，分别是input元素(<code>&lt;input/&gt;</code>)和按钮元素(<code>&lt;button&gt;</code>)。</p>
+<p>除了尖括号的英文外，其中还有许多”赋值语句”（如<code>width=&#39;200px&#39;</code>）</p>
+<p>总结起来就两类东西：<strong>标签</strong>和<strong>属性</strong></p>
+<h2 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h2><p><strong>标签</strong>用于标记文本信息，指用尖括号（<code>&lt;&gt;</code>和<code>&lt;/&gt;</code>）括起来的字母和英文，形式有两种：<strong>闭合标签</strong>和<strong>空标签</strong></p>
+<ul>
+<li><strong>闭合标签</strong>，它们绝大多数成对出现（有开始标签<code>&lt;&gt;</code>,也有结束标签<code>&lt;/&gt;</code>），如：<code>&lt;title&gt;和&lt;/title&gt;</code>是标题标签，<code>&lt;div&gt;和&lt;/div&gt;</code>是块标签，<code>&lt;form&gt;和&lt;/form&gt;</code>是表单标签。</li>
+<li><strong>空标签</strong>，即指单标签，只有一个尖括号<code>&lt;&gt;</code>（斜杠<code>/</code>可省略），标签开始即结束，比如上面的<code>&lt;img /&gt;</code>是图片标签，<code>&lt;link /&gt;</code>是链接标签，<code>&lt;input /&gt;</code>是input标签。</li>
+<li>同时需要注意的是标签和<strong>元素</strong>的不同，元素其实是包含了<strong>开始标签</strong>与<strong>结束标签</strong>内的所有代码。如html元素是指<code>&lt;html&gt;&lt;/html&gt;</code>包括标签内的所有代码。</li>
+<li>标签的作用：<strong>给浏览器介绍文本的结构</strong></li>
+<li>HTML文档含有许多标签，了解几个常用的即可，其余可以翻阅相关的文档（<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tags/index.asp">HTML标签</a>）</li>
+</ul>
+<h3 id="HTML常用标签"><a href="#HTML常用标签" class="headerlink" title="HTML常用标签"></a>HTML常用标签</h3><table>
+<thead>
+<tr>
+<th align="center">标签</th>
+<th align="center">作用</th>
+<th align="center">标签</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><html></td>
+<td align="center">定义html文档</td>
+<td align="center"><h1>、<h2>、<h3></td>
+<td align="center">定义标题</td>
+</tr>
+<tr>
+<td align="center"><head></td>
+<td align="center">定义文档头部</td>
+<td align="center"><p></td>
+<td align="center">定义段落</td>
+</tr>
+<tr>
+<td align="center"><body></td>
+<td align="center">定义文档主体</td>
+<td align="center"><img></td>
+<td align="center">定义图片</td>
+</tr>
+<tr>
+<td align="center"><a></td>
+<td align="center">定义超链接</td>
+<td align="center"><ol></td>
+<td align="center">定义有序列表</td>
+</tr>
+<tr>
+<td align="center"><audio></td>
+<td align="center">定义音频</td>
+<td align="center"><ul></td>
+<td align="center">定义无序列表</td>
+</tr>
+<tr>
+<td align="center"><button></td>
+<td align="center">定义按钮</td>
+<td align="center"><li></td>
+<td align="center">定义单个列表条目</td>
+</tr>
+<tr>
+<td align="center"><div></td>
+<td align="center">定义块区域</td>
+<td align="center"><br></td>
+<td align="center">分行</td>
+</tr>
+<tr>
+<td align="center"><!--    --></td>
+<td align="center">注释</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><p>用<strong>标签</strong>给文本标记好了之后</p>
+<p>想更加详细生动地描述乏味的标签，需要向标签注入点“形容词”，大的还是小的？长的还是高的？红色还是蓝色？</p>
+<p>总而言之，<strong>属性</strong>就是去刻画元素的，给<code>html</code>的骨架增添点漂亮的“衣服”。</p>
+<p>例如<strong>width属性</strong>可以描述图片的宽。<strong>height属性</strong>能控制图片的高度，两相结合，图片的大小即可随意调整</p>
+<p>除此之外，还有设置图片链接的<strong>src属性</strong>（<code>src=&#39;xx&#39;</code>），<strong>alt属性</strong>可编辑当图片无法显示时的替代文本</p>
+<p>它们的独有的特征是：都由<strong>赋值语句</strong>构成</p>
+<p><code>属性名 = &quot;属性值&quot;</code></p>
+<p>例如name = “value”、style = “color:#20b2aa”</p>
+<p>属性让人一目了然，但若一个标签具有多个属性（如大小、颜色、间距、对齐方式），结构就会变得十分冗杂，严重影响阅读体验，可以用通用的<code>style</code>属性把所有的样式以<strong>键值对</strong>的形式收集起来，像这样：</p>
+<p><code>&lt;h1 style=&quot;font-weight:bold;text-align:center;letter-spacing:2px;color: #20b2aa;&quot;&gt;tset&lt;/h1&gt;</code></p>
+<p>或者：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">            <span class="comment">/*h1 &#123;&#125;的内容，是h1元素样式的具体描述*/</span></span></span><br><span class="line"><span class="css">            <span class="selector-tag">h1</span> &#123;</span></span><br><span class="line"><span class="css">                <span class="attribute">font-weight</span>: bold;<span class="comment">/*控制元素字体粗细*/</span></span></span><br><span class="line"><span class="css">                <span class="attribute">text-align</span>: center;<span class="comment">/*控制元素对齐方式*/</span></span></span><br><span class="line"><span class="css">                <span class="attribute">letter-spacing</span>: <span class="number">2px</span>;<span class="comment">/*控制文本字符的间距*/</span></span></span><br><span class="line"><span class="css">                <span class="attribute">color</span>: <span class="number">#20b2aa</span>;<span class="comment">/*控制元素的颜色*/</span></span></span><br><span class="line"><span class="css">            &#125;</span></span><br><span class="line"><span class="css">        </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>tset<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>但这样设置后，h1元素都一个模样，倘若第二个h1元素想换成其他样式就不太方便</p>
+<p>为了解决这个问题，<code>HTML</code>文档诞生了两个最为特殊的<strong>元素</strong>：<code>class</code>和<code>id</code></p>
+<h3 id="属性：class-amp-id"><a href="#属性：class-amp-id" class="headerlink" title="属性：class&amp;id"></a>属性：class&amp;id</h3><h4 id="class属性"><a href="#class属性" class="headerlink" title="class属性"></a>class属性</h4><p>在HTML文档中，有一个关键词为<code>class</code>的属性，<code>class</code>属性值相同的元素可复用同一套样式。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">        <span class="comment">/*定义了class属性为style_1的样式*/</span></span></span><br><span class="line"><span class="css">        <span class="selector-class">.style_1</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="attribute">width</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="css">        &#125;</span></span><br><span class="line"><span class="css">        <span class="comment">/*定义了class属性为style_2的样式*/</span></span></span><br><span class="line"><span class="css">        <span class="selector-class">.style_2</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="attribute">width</span>: <span class="number">50px</span>;</span></span><br><span class="line"><span class="css">        &#125;</span></span><br><span class="line"><span class="css">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">&quot;background:#a8c7e2&quot;</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 第一行图片 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&#x27;style_1&#x27;</span> <span class="attr">src</span>=<span class="string">&quot;https://res.pandateacher.com/风变科技logo1.png&quot;</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&#x27;style_2&#x27;</span> <span class="attr">src</span>=<span class="string">&quot;https://res.pandateacher.com/forchange_blue_logo.png&quot;</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&#x27;style_2&#x27;</span> <span class="attr">src</span>=<span class="string">&quot;https://res.pandateacher.com/forchange_black_logo.png&quot;</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 第二行图片 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&#x27;style_1&#x27;</span> <span class="attr">src</span>=<span class="string">&quot;https://res.pandateacher.com/风变科技logo2.png&quot;</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&#x27;style_2&#x27;</span> <span class="attr">src</span>=<span class="string">&quot;https://res.pandateacher.com/panda_black_logo.png&quot;</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&#x27;style_2&#x27;</span> <span class="attr">src</span>=<span class="string">&quot;https://res.pandateacher.com/panda_white_logo.png&quot;</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在上面的代码中，创建了两套样式，图片<code>class</code>属性值为<code>style_1</code>，获得<code>&lt;style&gt;</code>标签中的<code>.style_1</code>样式，其余<code>class</code>属性值为<code>style_2</code>的图片抱走<code>.style_2</code>的样式</p>
+<p><code>class</code>属性的作用是给元素增添类名，多个元素可配置一个类名，类名相同的元素沿袭同一套样式</p>
+<h4 id="id属性"><a href="#id属性" class="headerlink" title="id属性"></a>id属性</h4><p><code>id</code>属性则刚好和<code>class</code>属性相反，整个HTML文档，它是独一无二的标识，每个<code>id</code>值只能定义一个元素。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">            <span class="selector-class">.book</span> &#123;</span></span><br><span class="line"><span class="css">                <span class="attribute">padding</span>: <span class="number">0px</span>;</span></span><br><span class="line"><span class="css">                <span class="attribute">margin</span>: <span class="number">0px</span>;</span></span><br><span class="line"><span class="css">            &#125;</span></span><br><span class="line"><span class="css">            <span class="selector-id">#book_info</span> &#123;</span></span><br><span class="line"><span class="css">                <span class="attribute">width</span>: <span class="number">450px</span>;</span></span><br><span class="line"><span class="css">                <span class="attribute">font-size</span>: <span class="number">13px</span>;</span></span><br><span class="line"><span class="css">            &#125;</span></span><br><span class="line"><span class="css">        </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span> <span class="attr">align</span>=<span class="string">&#x27;center&#x27;</span> <span class="attr">style</span>=<span class="string">&#x27;color: #20b2aa;&#x27;</span>&gt;</span>这个书苑不太冷<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h2</span> <span class="attr">style</span>=<span class="string">&quot; font-weight: bold;padding-bottom: 3px;margin-bottom: 16px;border-bottom: 1px solid #ddd;&quot;</span>&gt;</span>喜欢的书:<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;book&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">img</span> <span class="attr">style</span>=<span class="string">&#x27;float: left;margin-right: 20px;height: 200px;&#x27;</span> <span class="attr">src</span>=<span class="string">&quot;https://res.pandateacher.com/book_qidianyimin.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;奇点遗民&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&#x27;book&#x27;</span> <span class="attr">id</span>=<span class="string">&quot;book_info&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">h4</span>&gt;</span>《奇点遗民》<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&#x27;color:#4c4a4a;&#x27;</span>&gt;</span>本书精选收录了刘宇昆的科幻佳作共22篇</span><br><span class="line">                <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://wordpress-edu-3autumn.localprod.oc.forchange.cn/&quot;</span>&gt;</span>点这里看看<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>重点关注第18行和第20行代码，显然，两个div元素含有同一个<code>class</code>属性值<code>book</code>，两个元素都可以使用<code>.book</code>的样式，但只有<code>id=&quot;book_info&quot;</code>的元素可以使用<code>#book_info</code>的样式</p>
+<p>在<code>&lt;style&gt;</code>标签中定义class属性的样式用点<code>.</code>，id属性用井号键<code>#</code></p>
+<p><code>id</code>就像是学生的学生证号码，每个人都是唯一的，而学生们可以属于同一个班级，班级就像<code>class</code></p>
+<h2 id="HTML文档总结"><a href="#HTML文档总结" class="headerlink" title="HTML文档总结"></a>HTML文档总结</h2><ul>
+<li><p>层级结构</p>
+<ul>
+<li><p>由元素组成</p>
+</li>
+<li><p>缩进代表html的层级</p>
+</li>
+<li><p>```html</p>
+<html>
+    <head></head>
+    <body><!-- hexo injector body_end start --><script data-pjax>function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='/'|| '/' ==='all')){
+
+            history_calendar_injector_config()
+        } </script><script data-pjax  src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><script data-pjax>function electric_clock_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>';
+                console.log('已挂载electric_clock')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='/'|| '/' ==='all')){
+
+            electric_clock_injector_config()
+        } </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax  src="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.js"></script><!-- hexo injector body_end end --></body>
+</head>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">- 标签</span><br><span class="line">  - 空标签（&lt;/&gt;或&lt;&gt;）</span><br><span class="line">  - 闭合标签（&lt;&gt;和&lt;/&gt;）</span><br><span class="line"></span><br><span class="line">- 属性</span><br><span class="line">  - 标签内的赋值语句(width = &#x27;20px&#x27;)</span><br><span class="line">  - class属性可定义相同类型的元素</span><br><span class="line">  - id是定义元素的唯一标识</span><br><span class="line"></span><br><span class="line">- 开始标签和结束标签在内的所有代码</span><br><span class="line"></span><br><span class="line">## HTML分析</span><br><span class="line"></span><br><span class="line">### 开发者工具</span><br><span class="line"></span><br><span class="line">使用谷歌浏览器随机打开一个网页，右键点击【**检查**】选项，或者直接按F12，随后网页弹出一个子窗口，这便是浏览器的开发者工具。</span><br><span class="line"></span><br><span class="line">HTML的层级关系可通过其中的小三角形进行查阅，每一个可以展开和合上的小三角形里包含的内容，都是一个层级，就像电脑中一层一层的文件夹</span><br><span class="line"></span><br><span class="line">善用定位工具来定位所要查找的网页内容的源代码，可以进行进一步修改</span><br><span class="line"></span><br><span class="line">当然，这样的修改只是在**本地的修改**，而服务器上的源文件是修改不了的，可以使用这个方法来调试HTML代码。</span><br><span class="line"></span><br><span class="line">### Network</span><br><span class="line"></span><br><span class="line">`Network`的功能是：记录在当前页面上发生的所有请求。`Network`记录的是实时网络请求</span><br><span class="line"></span><br><span class="line">刷新网络界面后，浏览器会重新访问网络，这样就会有记录。</span><br><span class="line"></span><br><span class="line">在最下面会显示：此处共有xx个请求，xxMB项资源，耗时 xx s完成。</span><br><span class="line"></span><br><span class="line">这个，正是浏览器每时每刻工作的真相：它总是在向服务器，发起各式各样的请求。当这些请求完成，它们会一起组成`Elements`中的网页源代码</span><br><span class="line"></span><br><span class="line">一般来说，都是这种第0个请求先启动了，其他的请求才会关联启动，一点点地将网页给填充起来。做一个比喻，第0个请求就好比是人的骨架，确定了这个网页的结构。在此之后，众多的请求接连涌入</span><br><span class="line"></span><br><span class="line">有一些网页，直接把所有的关键信息都放在第0个请求里，尤其是一些比较老（或比较轻量）的网站，直接用`requests`和`BeautifulSoup`就能解决它们。</span><br><span class="line"></span><br><span class="line">![1](https://pic.imgdb.cn/item/626e6714239250f7c595fac1.jpg)</span><br><span class="line"></span><br><span class="line">第0行的左侧，红色的圆钮是启用`Network`监控（默认高亮打开），灰色圆圈是清空面板上的信息。右侧勾选框`Preserve log`，它的作用是“保留请求日志”。如果不点击这个，当发生页面跳转的时候，记录就会被清空。所以，在爬取一些会发生跳转的网页时，会点亮它</span><br><span class="line"></span><br><span class="line">第1行，是对请求进行分类查看</span><br><span class="line"></span><br><span class="line">- ALL - 查看全部</span><br><span class="line">- XHR - 一种不借助刷新网页即可传输数据的对象</span><br><span class="line">- Doc - Document，第0个请求一般在这里</span><br><span class="line">- lmg - 仅查看图片</span><br><span class="line">- Media - 仅查看媒体文件</span><br><span class="line">- Other - 其他</span><br><span class="line">- JS和CSS - 前端代码,负责发起请求和页面实现</span><br><span class="line">- Font - 字体</span><br><span class="line"></span><br><span class="line">### XHR</span><br><span class="line"></span><br><span class="line">在`Network`中，有一类非常重要的请求叫做`XHR`（把鼠标在XHR上悬停，可以看到它的完整表述是XHR and Fetch）</span><br><span class="line"></span><br><span class="line">使用浏览器上网的时候，经常有这样的情况：浏览器上方，它所访问的网址没变，但是网页里却新加了内容。</span><br><span class="line"></span><br><span class="line">典型代表：购物网站，下滑自动加载出更多商品。在线翻译网站，输入中文实时变英文。</span><br><span class="line"></span><br><span class="line">这种技术叫做Ajax技术。应用这种技术，好处是显而易见的——更新网页内容，而不用重新加载整个网页。又省流量又省时间的，何乐而不为，富加载文本数据</span><br><span class="line"></span><br><span class="line">这种技术在工作的时候，会创建一个`XHR`（或是Fetch）对象，然后利用`XHR`对象来实现，服务器和浏览器之间传输数据。在这里，`XHR`和`Fetch`并没有本质区别，只是`Fetch`出现得比`XHR`更晚一些，所以对一些开发人员来说会更好用，但作用都是一样的。</span><br><span class="line"></span><br><span class="line">## json</span><br><span class="line"></span><br><span class="line">`json`是一种数据交换的格式</span><br><span class="line"></span><br><span class="line">```python</span><br><span class="line"># 定义一个字典  </span><br><span class="line">a = &#123;&#x27;name&#x27;:&#x27;以西&#x27;&#125;</span><br><span class="line"># 定义一张列表</span><br><span class="line">b = [1,2,3,4]</span><br><span class="line"># 定义一个json</span><br><span class="line">c = &#123;</span><br><span class="line">        &quot;people&quot;: </span><br><span class="line">        [</span><br><span class="line">            &#123; &quot;name&quot;:&quot;A&quot; , &quot;gender&quot;:&quot;male&quot;&#125;, </span><br><span class="line">            &#123; &quot;name&quot;:&quot;B&quot; , &quot;gender&quot;:&quot;female&quot;&#125;, </span><br><span class="line">            &#123; &quot;name&quot;:&quot;C&quot; , &quot;gender&quot;:&quot;male&quot;&#125;,</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<p>这种特殊的写法决定了，<code>json</code>能够有组织地存储信息。</p>
+<p><code>json</code>是另一种组织数据的格式，长得和Python中的列表/字典非常相像。它和<code>html</code>一样，常用来做网络数据传输。刚刚在<code>XHR</code>里查看到的列表/字典，严格来说其实它不是列表/字典，是<code>json</code>。如此，<code>json</code>数据才能实现，跨平台，跨语言工作。</p>
+<p><code>json</code>和<code>XHR</code>之间的关系：<code>XHR</code>用于传输数据，它能传输很多种数据，<code>json</code>是被传输的一种数据格式</p>
+<h3 id="json数据解析"><a href="#json数据解析" class="headerlink" title="json数据解析"></a>json数据解析</h3><p>requests.get( )请求得到了<code>json</code>数据，可以在<code>requests</code>库的官方文档中查看解析方法</p>
+<p>Requests 中也有一个内置的 JSON 解码器，来处理 JSON 数据：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">r = requests.get(<span class="string">&#x27;https://api.github.com/events&#x27;</span>)</span><br><span class="line">r.json()</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>[&#123;<span class="string">u&#x27;repository&#x27;</span>: &#123;<span class="string">u&#x27;open_issues&#x27;</span>: <span class="number">0</span>, <span class="string">u&#x27;url&#x27;</span>: <span class="string">&#x27;https://github.com/...</span></span><br></pre></td></tr></table></figure>
+
+<p>如果 JSON 解码失败， <code>r.json()</code> 就会抛出一个异常。例如，响应内容是 401 (Unauthorized)，尝试访问 <code>r.json()</code> 将会抛出 <code>ValueError: No JSON object could be decoded</code> 异常。</p>
+<p>需要注意的是，成功调用 <code>r.json()</code> 并<strong>不</strong>意味着响应的成功。有的服务器会在失败的响应中包含一个 JSON 对象（比如 HTTP 500 的错误细节）。这种 JSON 会被解码返回。要检查请求是否成功，请使用 <code>r.raise_for_status()</code> 或者检查 <code>r.status_code</code> 是否和你的期望相同。</p>
+<h1 id="解析数据"><a href="#解析数据" class="headerlink" title="解析数据"></a>解析数据</h1><h2 id="BeautifulSoup模块"><a href="#BeautifulSoup模块" class="headerlink" title="BeautifulSoup模块"></a>BeautifulSoup模块</h2><p><code>requests</code>库搞定了爬虫第0步——获取数据</p>
+<p>解析和提取的部分就交给灵活又方便的<strong>网页解析库</strong><code>BeautifulSoup</code></p>
+<p><code>BeautifulSoup</code>解析数据的用法：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line">bs对象 = BeautifulSoup(要解析的文本,<span class="string">&#x27;解析器&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>第1个参数是要被解析的文本，它必须必须必须是字符串</li>
+<li>第2个参数用来标识解析器，要用的是一个Python内置库：<code>html.parser</code>。（它不是唯一的解析器，却是简单的那个）</li>
+<li><code>response.text</code>和<code>bs解析</code>打印出的内容表面上看长得一模一样，但它们属于不同的类：<code>&lt;class &#39;str&#39;&gt;</code> 与<code>&lt;class &#39;bs4.BeautifulSoup&#39;&gt;</code>。前者是字符串，后者是已经被解析过的<code>BeautifulSoup</code>对象。之所以打印出来的是一样的文本，是因为BeautifulSoup对象在直接打印它的时候会调用该对象内的<strong>str</strong>方法，所以直接打印 bs 对象显示字符串是<strong>str</strong>的返回结果。</li>
+</ul>
+<h1 id="提取数据"><a href="#提取数据" class="headerlink" title="提取数据"></a>提取数据</h1><p>使用<code>BeautifulSoup</code>来提取数据</p>
+<h2 id="find-与find-all"><a href="#find-与find-all" class="headerlink" title="find( )与find_all( )"></a>find( )与find_all( )</h2><p><code>find()</code>与<code>find_all()</code>是<code>BeautifulSoup</code>对象的两个方法，它们可以匹配html的标签和属性，把BeautifulSoup对象里符合要求的数据都提取出来</p>
+<p><code>find()</code><strong>只提取首个满足要求的数据</strong>。<code>find()</code>方法将代码从上往下找，找到符合条件的第一个数据，不管后面还有没有满足条件的其他数据，停止寻找，立即返回。</p>
+<p><code>find_all()</code>提取出的是<strong>所有满足要求的数据</strong>。代码从上往下找，一直到代码的最后，把所有符合条件的数据揣好，一起打包返回。</p>
+<table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">作用</th>
+<th align="center">用法</th>
+<th align="center">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">find( )</td>
+<td align="center">提取满足要求的首个数据</td>
+<td align="center">BeautifulSoup对象.find(标签,属性)</td>
+<td align="center">soup.find(‘div’,class_=’book’)</td>
+</tr>
+<tr>
+<td align="center">find_all( )</td>
+<td align="center">提取满足要求的所有数据</td>
+<td align="center">BeautifulSoup对象.find_all(标签,属性)</td>
+<td align="center">soup.find_all(‘div’,class_=’book’)</td>
+</tr>
+</tbody></table>
+<ul>
+<li>示例中括号里的<code>class_</code>有一个下划线，是为了和python语法中的类 <code>class</code>区分，避免程序冲突。当然，除了用<code>class</code>属性去匹配，还可以使用其它属性，比如<code>style</code>属性等</li>
+<li>find( )其次，括号中的参数：标签和属性可以任选其一，也可以两个一起使用，这取决于在网页中提取的内容</li>
+<li><code>bs_bookstore.find(&#39;ul&#39;,class_=&#39;nav&#39;).find(&#39;ul&#39;).find_all(&#39;li&#39;)</code>提取多个层级 </li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line">url = <span class="string">&#x27;https://localprod.pandateacher.com/python-manuscript/crawler-html/spder-men0.0.html&#x27;</span></span><br><span class="line">res = requests.get (url)</span><br><span class="line"><span class="built_in">print</span>(res.status_code)</span><br><span class="line">soup = BeautifulSoup(res.text,<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line"><span class="comment"># 使用find()方法提取首个&lt;div&gt;元素，并放到变量item里。</span></span><br><span class="line">item = soup.find(<span class="string">&#x27;div&#x27;</span>) </span><br><span class="line"><span class="comment"># 打印item的数据类型</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(item))</span><br><span class="line"><span class="comment"># 打印item  </span></span><br><span class="line"><span class="built_in">print</span>(item)    </span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;<span class="number">200</span></span><br><span class="line">&lt;<span class="class"><span class="keyword">class</span> &#x27;<span class="title">bs4</span>.<span class="title">element</span>.<span class="title">Tag</span>&#x27;&gt;</span></span><br><span class="line"><span class="class"># 这是一个<span class="title">Tag</span>类标签对象</span></span><br><span class="line"><span class="class">&lt;<span class="title">div</span>&gt;大家好，我是一个块&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="class"># 运行结果是首个<span class="title">div</span>元素</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="find-all"><a href="#find-all" class="headerlink" title="find_all( )"></a>find_all( )</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line">url = <span class="string">&#x27;https://localprod.pandateacher.com/python-manuscript/crawler-html/spder-men0.0.html&#x27;</span></span><br><span class="line">res = requests.get (url)</span><br><span class="line"><span class="built_in">print</span>(res.status_code)</span><br><span class="line">soup = BeautifulSoup(res.text,<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line"><span class="comment"># 用find_all()把所有符合要求的数据提取出来，并放在变量items里</span></span><br><span class="line">items = soup.find_all(<span class="string">&#x27;div&#x27;</span>) </span><br><span class="line"><span class="comment"># 打印items的数据类型</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(items))</span><br><span class="line"><span class="comment"># 打印items</span></span><br><span class="line"><span class="built_in">print</span>(items)</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;<span class="number">200</span></span><br><span class="line">&lt;<span class="class"><span class="keyword">class</span> &#x27;<span class="title">bs4</span>.<span class="title">element</span>.<span class="title">ResultSet</span>&#x27;&gt;</span></span><br><span class="line"><span class="class"># 得到的是一个<span class="title">ResultSet</span>类的对象。其实是<span class="title">Tag</span>对象以列表结构储存了起来，可以把它当做列表来处理。</span></span><br><span class="line"><span class="class">[&lt;<span class="title">div</span>&gt;大家好，我是一个块&lt;/<span class="title">div</span>&gt;, &lt;<span class="title">div</span>&gt;我也是一个块&lt;/<span class="title">div</span>&gt;, &lt;<span class="title">div</span>&gt;我还是一个块&lt;/<span class="title">div</span>&gt;]</span></span><br><span class="line"><span class="class"># 运行结果是全部的<span class="title">div</span>元素，它们一起组成了一个列表结构</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Tag对象"><a href="#Tag对象" class="headerlink" title="Tag对象"></a>Tag对象</h2><p><code>Tag</code>类对象的常用属性和方法</p>
+<table>
+<thead>
+<tr>
+<th align="center">属性/方法</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Tag.find()和Tag.find_all()</td>
+<td align="center">提取Tag中的Tag</td>
+</tr>
+<tr>
+<td align="center">Tag.text</td>
+<td align="center">提取Tag中的文字</td>
+</tr>
+<tr>
+<td align="center">Tag[‘属性名’]</td>
+<td align="center">输入参数后提取Tag中这个属性的值</td>
+</tr>
+</tbody></table>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 调用requests库</span></span><br><span class="line"><span class="keyword">import</span> requests </span><br><span class="line"><span class="comment"># 调用BeautifulSoup库</span></span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup </span><br><span class="line"><span class="comment"># 返回一个response对象，赋值给res</span></span><br><span class="line">res =requests.get(<span class="string">&#x27;https://localprod.pandateacher.com/python-manuscript/crawler-html/spider-men5.0.html&#x27;</span>)</span><br><span class="line"><span class="comment"># 把res解析为字符串</span></span><br><span class="line">html=res.text</span><br><span class="line"><span class="comment"># 把网页解析为BeautifulSoup对象</span></span><br><span class="line">soup = BeautifulSoup( html,<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line"><span class="comment"># 通过匹配属性class=&#x27;books&#x27;提取出我们想要的元素</span></span><br><span class="line">items = soup.find_all(class_=<span class="string">&#x27;books&#x27;</span>)  </span><br><span class="line"><span class="comment"># 遍历列表items</span></span><br><span class="line"><span class="keyword">for</span> item <span class="keyword">in</span> items:       </span><br><span class="line">    <span class="comment"># 在列表中的每个元素里，匹配标签&lt;h2&gt;提取出数据               </span></span><br><span class="line">    kind = item.find(<span class="string">&#x27;h2&#x27;</span>)     </span><br><span class="line">    <span class="comment">#  在列表中的每个元素里，匹配属性class_=&#x27;title&#x27;提取出数据          </span></span><br><span class="line">    title = item.find(class_=<span class="string">&#x27;title&#x27;</span>)  </span><br><span class="line">    <span class="comment"># 在列表中的每个元素里，匹配属性class_=&#x27;info&#x27;提取出数据   </span></span><br><span class="line">    brief = item.find(class_=<span class="string">&#x27;info&#x27;</span>)      </span><br><span class="line">    <span class="comment"># 打印书籍的类型、名字、链接和简介的文字</span></span><br><span class="line">    <span class="built_in">print</span>(kind.text,<span class="string">&#x27;\n&#x27;</span>,title.text,<span class="string">&#x27;\n&#x27;</span>,title[<span class="string">&#x27;href&#x27;</span>],<span class="string">&#x27;\n&#x27;</span>,brief.text) </span><br></pre></td></tr></table></figure>
+
+<p>用<code>text</code>获取Tag类数据的纯文本时，获取的是该标签内的所有纯文本信息，不论是直接在这个标签内，还是在它的子标签内。</p>
+<p>需要强调的一点是，<code>text</code>可以这样做，但如果是要提取属性的值，是不可以的。父标签只能提取它自身的属性值，不能提取子标签的属性值，不然就是会报错</p>
+<h2 id="对象的变化过程"><a href="#对象的变化过程" class="headerlink" title="对象的变化过程"></a>对象的变化过程</h2><p>操作对象从<code>URL</code>链接用<code>requests.get(url)</code>到了<code>Response</code>对象,又通过<code>response.text</code>转化为字符串格式，再通过<code>BeautiflSoup(字符串，&#39;html.parser&#39;)</code>转换成BS对象</p>
+<p>我操作对象是这样的：<code>Response对象</code>——<code>字符串</code>——<code>BS对象</code>。到这里，又产生了两条分岔：一条是<code>BS对象</code>——<code>Tag对象</code>；另一条是<code>BS对象</code>——<code>列表</code>——<code>Tag对象</code></p>
+<h1 id="带参数请求数据"><a href="#带参数请求数据" class="headerlink" title="带参数请求数据"></a>带参数请求数据</h1><p>一个url的完整格式</p>
+<p>在豆瓣搜索“海边的卡夫卡”，它的网址会是这样：</p>
+<p><a target="_blank" rel="noopener" href="https://www.douban.com/search?q=%E6%B5%B7%E8%BE%B9%E7%9A%84%E5%8D%A1%E5%A4%AB%E5%8D%A1">https://www.douban.com/search?q=%E6%B5%B7%E8%BE%B9%E7%9A%84%E5%8D%A1%E5%A4%AB%E5%8D%A1</a></p>
+<p>在知乎搜索“宇宙大爆炸”，它的网址会是这样：</p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/search?type=content&amp;q=%E5%AE%87%E5%AE%99%E5%A4%A7%E7%88%86%E7%82%B8">https://www.zhihu.com/search?type=content&amp;q=%E5%AE%87%E5%AE%99%E5%A4%A7%E7%88%86%E7%82%B8</a></p>
+<p>上面每个<code>url</code>都由两部分组成。前半部分大多形如：<a target="_blank" rel="noopener" href="https://xx.xx.xxx/xxx/xxx">https://xx.xx.xxx/xxx/xxx</a></p>
+<p>后半部分，多形如：xx=xx&amp;xx=xxx&amp;xxxxx=xx&amp;……</p>
+<p>两部分使用<code>?</code>来连接</p>
+<p>这前半部分是需要请求的地址，它告诉服务器，我想访问这里。而后半部分，就是请求所附带的参数，它会告诉服务器想要<strong>什么样</strong>的数据。</p>
+<p>这参数的结构，会和字典很像，有键有值，键值用<code>=</code>连接；每组键值之间，使用<code>&amp;</code>来连接。</p>
+<p>例如豆瓣。请求的地址是<a target="_blank" rel="noopener" href="https://www.douban.com/search">https://www.douban.com/search</a></p>
+<p>而<code>q=%E6%B5%B7%E8%BE%B9%E7%9A%84%E5%8D%A1%E5%A4%AB%E5%8D%A1</code>则是请求所附带的参数</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">以西</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://y1xi.fun/py-spider/">https://y1xi.fun/py-spider/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://y1xi.fun" target="_blank">以西的小窝</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/">学习指南</a><a class="post-meta__tags" href="/tags/python/">python</a><a class="post-meta__tags" href="/tags/webspider/">webspider</a></div><div class="post_share"><div class="social-share" data-image="https://pic.imgdb.cn/item/627231530947543129e687bb.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://pic.imgdb.cn/item/62723c8d0947543129022622.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/62723c8d0947543129022622.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://pic.imgdb.cn/item/62723cb70947543129028a17.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/62723cb70947543129028a17.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/gh/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/6272332c0947543129ea4564.jpg" onerror="onerror=null;src='/null'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Grasshopper</div></div></a></div><div class="next-post pull-right"><a href="/python/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/6272333d0947543129ea75a0.png" onerror="onerror=null;src='/null'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">python基础语法学习归档</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/627238140947543129f6fccb.jpg" onerror="this.onerror=null;this.src='/null'" alt="avatar"/></div><div class="author-info__name">以西</div><div class="author-info__description">天气真好，睡了好久</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">33</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">47</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">20</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://t.me/yixicool"><i class="fab fa-telegram-plane"></i><span>Telegram Chat</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://pic.imgdb.cn/item/62723c37094754312901619e.jpg" target="_blank" title=""><i class="fab fa-qq"></i></a><a class="social-icon" href="https://pic.imgdb.cn/item/62723c250947543129013879.jpg" target="_blank" title=""><i class="fab fa-weixin"></i></a><a class="social-icon" href="https://github.com/yixicool" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:3257146832@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">今天想通了，明天又想不通了，反反复复，反反复复就在某个瞬间突然出现，随之而来的是无休止的难过，但是我不后悔热烈地表达过。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-text">浏览器的工作原理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%88%AC%E8%99%AB%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-text">爬虫的工作原理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%88%AC%E8%99%AB%E7%9A%84%E7%BA%A2%E7%BA%BF"><span class="toc-text">爬虫的红线</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE"><span class="toc-text">获取数据</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#requests%E6%A8%A1%E5%9D%97"><span class="toc-text">requests模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#requests-get"><span class="toc-text">requests.get( )</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Response%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7"><span class="toc-text">Response对象的常用属性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#response-status-code"><span class="toc-text">response.status_code</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%93%8D%E5%BA%94%E7%8A%B6%E6%80%81%E7%A0%81%E8%A7%A3%E9%87%8A"><span class="toc-text">常用响应状态码解释</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#response-content"><span class="toc-text">response.content</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#response-text"><span class="toc-text">response.text</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#response-encoding"><span class="toc-text">response.encoding</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML%E5%9F%BA%E7%A1%80"><span class="toc-text">HTML基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML%E7%9A%84%E7%BB%84%E6%88%90"><span class="toc-text">HTML的组成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B1%82%E7%BA%A7%E7%BB%93%E6%9E%84"><span class="toc-text">层级结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E7%AD%BE"><span class="toc-text">标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE"><span class="toc-text">HTML常用标签</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">、、</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text">、</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text"></span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7"><span class="toc-text">属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7%EF%BC%9Aclass-amp-id"><span class="toc-text">属性：class&amp;id</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#class%E5%B1%9E%E6%80%A7"><span class="toc-text">class属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#id%E5%B1%9E%E6%80%A7"><span class="toc-text">id属性</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML%E6%96%87%E6%A1%A3%E6%80%BB%E7%BB%93"><span class="toc-text">HTML文档总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#json%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90"><span class="toc-text">json数据解析</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A7%A3%E6%9E%90%E6%95%B0%E6%8D%AE"><span class="toc-text">解析数据</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#BeautifulSoup%E6%A8%A1%E5%9D%97"><span class="toc-text">BeautifulSoup模块</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8F%90%E5%8F%96%E6%95%B0%E6%8D%AE"><span class="toc-text">提取数据</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#find-%E4%B8%8Efind-all"><span class="toc-text">find( )与find_all( )</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#find-all"><span class="toc-text">find_all( )</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tag%E5%AF%B9%E8%B1%A1"><span class="toc-text">Tag对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%8F%98%E5%8C%96%E8%BF%87%E7%A8%8B"><span class="toc-text">对象的变化过程</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%A6%E5%8F%82%E6%95%B0%E8%AF%B7%E6%B1%82%E6%95%B0%E6%8D%AE"><span class="toc-text">带参数请求数据</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2022 By 以西</div><div class="footer_custom_text">来都来了，确定不收藏下再走嘛 Ψ(￣∀￣)Ψ</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.7" zIndex="-1" mobile="true" data-click="false"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="true" data-text="民主,文明,和谐,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="true" async="async"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script></body></html>

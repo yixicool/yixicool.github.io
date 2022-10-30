@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>以西的小窝</title>
+  <icon>https://y1xi.fun/icon.png</icon>
+  
+  <link href="https://y1xi.fun/atom.xml" rel="self"/>
+  
+  <link href="https://y1xi.fun/"/>
+  <updated>2022-10-30T06:37:45.620Z</updated>
+  <id>https://y1xi.fun/</id>
+  
+  <author>
+    <name>以西</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>web_archiveⅢ：就这样沉默地走在中原大地上</title>
+    <link href="https://y1xi.fun/web_archive_3/"/>
+    <id>https://y1xi.fun/web_archive_3/</id>
+    <published>2022-10-30T05:14:39.000Z</published>
+    <updated>2022-10-30T06:37:45.620Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;关于栏目&quot;&gt;&lt;a href=&quot;#关于栏目&quot; class=&quot;headerlink&quot; title=&quot;关于栏目&quot;&gt;&lt;/a&gt;关于栏目&lt;/h2&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;&lt;del&gt;web_archive -</summary>
+        
+      
+    
+    
+    
+    <category term="互联网的记忆" scheme="https://y1xi.fun/categories/%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E8%AE%B0%E5%BF%86/"/>
+    
+    
+    <category term="web_archive" scheme="https://y1xi.fun/tags/web-archive/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>web_archiveⅡ：Z零壹</title>
+    <link href="https://y1xi.fun/web_archive_2/"/>
+    <id>https://y1xi.fun/web_archive_2/</id>
+    <published>2022-10-10T05:02:35.000Z</published>
+    <updated>2022-10-30T06:37:58.638Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;hr&gt;
+&lt;h2 id=&quot;关于栏目&quot;&gt;&lt;a href=&quot;#关于栏目&quot; class=&quot;headerlink&quot; title=&quot;关于栏目&quot;&gt;&lt;/a&gt;关于栏目&lt;/h2&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;&lt;del&gt;web_archive -</summary>
+        
+      
+    
+    
+    
+    <category term="互联网的记忆" scheme="https://y1xi.fun/categories/%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E8%AE%B0%E5%BF%86/"/>
+    
+    
+    <category term="web_archive" scheme="https://y1xi.fun/tags/web-archive/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>web_archiveⅠ:告知书 - 耍下</title>
+    <link href="https://y1xi.fun/web_archive_1/"/>
+    <id>https://y1xi.fun/web_archive_1/</id>
+    <published>2022-10-09T03:40:18.000Z</published>
+    <updated>2022-10-10T06:17:56.088Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;hr&gt;
+&lt;h2 id=&quot;关于栏目&quot;&gt;&lt;a href=&quot;#关于栏目&quot; class=&quot;headerlink&quot; title=&quot;关于栏目&quot;&gt;&lt;/a&gt;关于栏目&lt;/h2&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;&lt;del&gt;web_archive -</summary>
+        
+      
+    
+    
+    
+    <category term="互联网的记忆" scheme="https://y1xi.fun/categories/%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E8%AE%B0%E5%BF%86/"/>
+    
+    
+    <category term="web_archive" scheme="https://y1xi.fun/tags/web-archive/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git秘籍</title>
+    <link href="https://y1xi.fun/git/"/>
+    <id>https://y1xi.fun/git/</id>
+    <published>2022-10-06T13:25:03.000Z</published>
+    <updated>2022-10-06T14:04:55.476Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Git 命令汇总&lt;/p&gt;
+&lt;h3 id=&quot;入门配置&quot;&gt;&lt;a href=&quot;#入门配置&quot; class=&quot;headerlink&quot; title=&quot;入门配置&quot;&gt;&lt;/a&gt;入门配置&lt;/h3&gt;&lt;h4 id=&quot;用户信息&quot;&gt;&lt;a href=&quot;#用户信息&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="编程" scheme="https://y1xi.fun/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="Git" scheme="https://y1xi.fun/categories/%E7%BC%96%E7%A8%8B/Git/"/>
+    
+    
+    <category term="git" scheme="https://y1xi.fun/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>研途_住宅类建筑基础知识</title>
+    <link href="https://y1xi.fun/hard-one/"/>
+    <id>https://y1xi.fun/hard-one/</id>
+    <published>2022-09-17T08:13:36.000Z</published>
+    <updated>2022-10-06T12:20:12.162Z</updated>
+    
+    
+    
+    
+    <category term="建筑学" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
+    
+    <category term="考研" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%80%83%E7%A0%94/"/>
+    
+    
+    <category term="考研" scheme="https://y1xi.fun/tags/%E8%80%83%E7%A0%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>grasshopper实例Ⅱ：Al Bahar Towers</title>
+    <link href="https://y1xi.fun/gh-two/"/>
+    <id>https://y1xi.fun/gh-two/</id>
+    <published>2022-08-28T15:02:16.000Z</published>
+    <updated>2022-10-06T10:14:03.252Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;建模前期了解&quot;&gt;&lt;a href=&quot;#建模前期了解&quot; class=&quot;headerlink&quot; title=&quot;建模前期了解&quot;&gt;&lt;/a&gt;建模前期了解&lt;/h1&gt;&lt;p&gt;Al Bahar</summary>
+        
+      
+    
+    
+    
+    <category term="建筑学" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
+    
+    <category term="软件" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="建模" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/%E5%BB%BA%E6%A8%A1/"/>
+    
+    
+    <category term="软件" scheme="https://y1xi.fun/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="pc" scheme="https://y1xi.fun/tags/pc/"/>
+    
+    <category term="建模" scheme="https://y1xi.fun/tags/%E5%BB%BA%E6%A8%A1/"/>
+    
+    <category term="建筑" scheme="https://y1xi.fun/tags/%E5%BB%BA%E7%AD%91/"/>
+    
+    <category term="Grasshopper" scheme="https://y1xi.fun/tags/Grasshopper/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>grasshopper实例Ⅰ：丽泽SOHO</title>
+    <link href="https://y1xi.fun/gh-one/"/>
+    <id>https://y1xi.fun/gh-one/</id>
+    <published>2022-08-15T09:37:34.000Z</published>
+    <updated>2022-10-06T10:13:39.386Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;丽泽SOHO的体块生成&quot;&gt;&lt;a href=&quot;#丽泽SOHO的体块生成&quot; class=&quot;headerlink&quot; title=&quot;丽泽SOHO的体块生成&quot;&gt;&lt;/a&gt;丽泽SOHO的体块生成&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="建筑学" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
+    
+    <category term="软件" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="建模" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/%E5%BB%BA%E6%A8%A1/"/>
+    
+    
+    <category term="软件" scheme="https://y1xi.fun/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="pc" scheme="https://y1xi.fun/tags/pc/"/>
+    
+    <category term="建模" scheme="https://y1xi.fun/tags/%E5%BB%BA%E6%A8%A1/"/>
+    
+    <category term="建筑" scheme="https://y1xi.fun/tags/%E5%BB%BA%E7%AD%91/"/>
+    
+    <category term="Grasshopper" scheme="https://y1xi.fun/tags/Grasshopper/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown使用手册（超肝版）</title>
+    <link href="https://y1xi.fun/markdown/"/>
+    <id>https://y1xi.fun/markdown/</id>
+    <published>2022-08-09T16:36:38.000Z</published>
+    <updated>2022-10-06T10:13:07.932Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;font color=red&gt;&lt;strong&gt;写在开始&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font color=#6E75A4&gt;        Markdown</summary>
+        
+      
+    
+    
+    
+    <category term="工具" scheme="https://y1xi.fun/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="笔记" scheme="https://y1xi.fun/categories/%E5%B7%A5%E5%85%B7/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="学习指南" scheme="https://y1xi.fun/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    
+    <category term="效率" scheme="https://y1xi.fun/tags/%E6%95%88%E7%8E%87/"/>
+    
+    <category term="Markdown" scheme="https://y1xi.fun/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>认知偏差手册</title>
+    <link href="https://y1xi.fun/cognitive-bias/"/>
+    <id>https://y1xi.fun/cognitive-bias/</id>
+    <published>2022-07-25T02:26:24.000Z</published>
+    <updated>2022-10-06T10:18:25.304Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;决策、信念与行为偏差&quot;&gt;&lt;a href=&quot;#决策、信念与行为偏差&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="闲言碎语" scheme="https://y1xi.fun/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    
+    
+    <category term="反思" scheme="https://y1xi.fun/tags/%E5%8F%8D%E6%80%9D/"/>
+    
+    <category term="认知偏差" scheme="https://y1xi.fun/tags/%E8%AE%A4%E7%9F%A5%E5%81%8F%E5%B7%AE/"/>
+    
+    <category term="提升自我" scheme="https://y1xi.fun/tags/%E6%8F%90%E5%8D%87%E8%87%AA%E6%88%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>InDesign</title>
+    <link href="https://y1xi.fun/indesign/"/>
+    <id>https://y1xi.fun/indesign/</id>
+    <published>2022-07-21T08:27:04.000Z</published>
+    <updated>2022-10-06T10:16:03.541Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;ID基础&quot;&gt;&lt;a href=&quot;#ID基础&quot; class=&quot;headerlink&quot; title=&quot;ID基础&quot;&gt;&lt;/a&gt;ID基础&lt;/h1&gt;&lt;h2 id=&quot;快捷键设置&quot;&gt;&lt;a href=&quot;#快捷键设置&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="建筑学" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
+    
+    <category term="软件" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="https://y1xi.fun/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="pc" scheme="https://y1xi.fun/tags/pc/"/>
+    
+    <category term="学习指南" scheme="https://y1xi.fun/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    
+    <category term="效率" scheme="https://y1xi.fun/tags/%E6%95%88%E7%8E%87/"/>
+    
+    <category term="工具" scheme="https://y1xi.fun/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="InDesign" scheme="https://y1xi.fun/tags/InDesign/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>lr调色实录</title>
+    <link href="https://y1xi.fun/lightroom/"/>
+    <id>https://y1xi.fun/lightroom/</id>
+    <published>2022-07-02T09:49:39.000Z</published>
+    <updated>2022-10-06T10:17:23.255Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;色彩的基本要素&quot;&gt;&lt;a href=&quot;#色彩的基本要素&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="工具" scheme="https://y1xi.fun/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="调色" scheme="https://y1xi.fun/categories/%E5%B7%A5%E5%85%B7/%E8%B0%83%E8%89%B2/"/>
+    
+    
+    <category term="photoshop" scheme="https://y1xi.fun/tags/photoshop/"/>
+    
+    <category term="调色" scheme="https://y1xi.fun/tags/%E8%B0%83%E8%89%B2/"/>
+    
+    <category term="Lightroom" scheme="https://y1xi.fun/tags/Lightroom/"/>
+    
+    <category term="色彩科学" scheme="https://y1xi.fun/tags/%E8%89%B2%E5%BD%A9%E7%A7%91%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Google搜索语法</title>
+    <link href="https://y1xi.fun/google/"/>
+    <id>https://y1xi.fun/google/</id>
+    <published>2022-06-06T10:57:35.000Z</published>
+    <updated>2022-10-06T10:19:20.538Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;谷歌搜索语法大全&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;算&lt;/strong&gt; &lt;strong&gt;符&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;含&lt;/strong&gt; </summary>
+        
+      
+    
+    
+    
+    <category term="工具" scheme="https://y1xi.fun/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="效率" scheme="https://y1xi.fun/tags/%E6%95%88%E7%8E%87/"/>
+    
+    <category term="浏览器" scheme="https://y1xi.fun/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+    <category term="Google" scheme="https://y1xi.fun/tags/Google/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Drawing_Style</title>
+    <link href="https://y1xi.fun/drawing_style/"/>
+    <id>https://y1xi.fun/drawing_style/</id>
+    <published>2022-05-14T11:25:16.000Z</published>
+    <updated>2022-10-06T10:12:43.983Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;平面图&quot;&gt;&lt;a href=&quot;#平面图&quot; class=&quot;headerlink&quot; title=&quot;平面图&quot;&gt;&lt;/a&gt;平面图&lt;/h1&gt;&lt;h2 id=&quot;平面图绘制准则&quot;&gt;&lt;a href=&quot;#平面图绘制准则&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="建筑学" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
+    
+    <category term="软件" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="https://y1xi.fun/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="pc" scheme="https://y1xi.fun/tags/pc/"/>
+    
+    <category term="学习指南" scheme="https://y1xi.fun/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    
+    <category term="效率" scheme="https://y1xi.fun/tags/%E6%95%88%E7%8E%87/"/>
+    
+    <category term="工具" scheme="https://y1xi.fun/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="photoshop" scheme="https://y1xi.fun/tags/photoshop/"/>
+    
+    <category term="illustrator" scheme="https://y1xi.fun/tags/illustrator/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《认知觉醒》的认知觉醒</title>
+    <link href="https://y1xi.fun/book-cognitive-awakening/"/>
+    <id>https://y1xi.fun/book-cognitive-awakening/</id>
+    <published>2022-05-01T07:52:39.000Z</published>
+    <updated>2022-10-06T10:18:59.748Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;五月的开端，读本书充实下五一假期😎&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic.imgdb.cn/item/626e45ac239250f7c5446541.jpg&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;本能&quot;&gt;&lt;a href=&quot;#本能&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="吃喝玩乐" scheme="https://y1xi.fun/categories/%E5%90%83%E5%96%9D%E7%8E%A9%E4%B9%90/"/>
+    
+    <category term="书" scheme="https://y1xi.fun/categories/%E5%90%83%E5%96%9D%E7%8E%A9%E4%B9%90/%E4%B9%A6/"/>
+    
+    
+    <category term="读书" scheme="https://y1xi.fun/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+    <category term="反思" scheme="https://y1xi.fun/tags/%E5%8F%8D%E6%80%9D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Grasshopper</title>
+    <link href="https://y1xi.fun/gh/"/>
+    <id>https://y1xi.fun/gh/</id>
+    <published>2022-04-07T06:08:19.000Z</published>
+    <updated>2022-10-21T02:33:22.325Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Grasshopper的本质是对数据层级逻辑的理解与处理   </summary>
+        
+      
+    
+    
+    
+    <category term="建筑学" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
+    
+    <category term="软件" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="https://y1xi.fun/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="pc" scheme="https://y1xi.fun/tags/pc/"/>
+    
+    <category term="学习指南" scheme="https://y1xi.fun/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    
+    <category term="建模" scheme="https://y1xi.fun/tags/%E5%BB%BA%E6%A8%A1/"/>
+    
+    <category term="建筑" scheme="https://y1xi.fun/tags/%E5%BB%BA%E7%AD%91/"/>
+    
+    <category term="Rhino" scheme="https://y1xi.fun/tags/Rhino/"/>
+    
+    <category term="Grasshopper" scheme="https://y1xi.fun/tags/Grasshopper/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python爬虫学习归档</title>
+    <link href="https://y1xi.fun/py-spider/"/>
+    <id>https://y1xi.fun/py-spider/</id>
+    <published>2022-03-27T09:27:44.000Z</published>
+    <updated>2022-10-06T10:19:45.066Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;爬虫，从本质上来说，就是利用程序在网上拿到对自身有价值的数据&lt;/p&gt;
+&lt;p&gt;以百度为例，在搜索的时候仔细看，会发现每个搜索结果下面都有一个百度快照&lt;/p&gt;
+&lt;p&gt;点击百度快照，会发现网址的开头有baidu这个词，也就是说这个网页属于百度&lt;/p&gt;
+&lt;p&gt;这就是因为百度会源源不</summary>
+        
+      
+    
+    
+    
+    <category term="编程" scheme="https://y1xi.fun/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="https://y1xi.fun/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    
+    <category term="学习指南" scheme="https://y1xi.fun/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    
+    <category term="python" scheme="https://y1xi.fun/tags/python/"/>
+    
+    <category term="webspider" scheme="https://y1xi.fun/tags/webspider/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python基础语法学习归档</title>
+    <link href="https://y1xi.fun/python/"/>
+    <id>https://y1xi.fun/python/</id>
+    <published>2022-03-09T09:34:50.000Z</published>
+    <updated>2022-10-06T10:12:52.514Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;记录下py自学道路上的苦难🐶&lt;/p&gt;
+&lt;h1 id=&quot;数据处理&quot;&gt;&lt;a href=&quot;#数据处理&quot; class=&quot;headerlink&quot; title=&quot;数据处理&quot;&gt;&lt;/a&gt;数据处理&lt;/h1&gt;&lt;h2 id=&quot;print-函数&quot;&gt;&lt;a href=&quot;#print-函数&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="编程" scheme="https://y1xi.fun/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="https://y1xi.fun/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    
+    <category term="学习指南" scheme="https://y1xi.fun/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    
+    <category term="python" scheme="https://y1xi.fun/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Rhino</title>
+    <link href="https://y1xi.fun/rhino/"/>
+    <id>https://y1xi.fun/rhino/</id>
+    <published>2022-03-08T09:40:28.000Z</published>
+    <updated>2022-10-29T11:59:05.999Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;犀牛的建模逻辑是由线到面到体，而且由线到体的过程不是推敲的过程，而是生成的过程，面和体的形状由线来生成，所以建模时要注意对线条的把控，修改模型也要回到对线的调整上去&lt;/p&gt;
+&lt;p&gt;Nurbs曲面&lt;/p&gt;
+&lt;p&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="建筑学" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
+    
+    <category term="软件" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="https://y1xi.fun/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="pc" scheme="https://y1xi.fun/tags/pc/"/>
+    
+    <category term="学习指南" scheme="https://y1xi.fun/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    
+    <category term="效率" scheme="https://y1xi.fun/tags/%E6%95%88%E7%8E%87/"/>
+    
+    <category term="建模" scheme="https://y1xi.fun/tags/%E5%BB%BA%E6%A8%A1/"/>
+    
+    <category term="建筑" scheme="https://y1xi.fun/tags/%E5%BB%BA%E7%AD%91/"/>
+    
+    <category term="Rhino" scheme="https://y1xi.fun/tags/Rhino/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数字时代的反思</title>
+    <link href="https://y1xi.fun/Reflections-of-digital/"/>
+    <id>https://y1xi.fun/Reflections-of-digital/</id>
+    <published>2022-03-06T11:14:12.000Z</published>
+    <updated>2022-10-06T12:17:51.152Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;本文摘选于&lt;a href=&quot;https://sspai.com/matrix&quot;&gt;Matrix&lt;/a&gt;社区&lt;/p&gt;
+&lt;p&gt;原文地址：&lt;a href=&quot;https://sspai.com/post/71545&quot;&gt;养成好习惯01：放下手机，远离屏幕 - 少数派</summary>
+        
+      
+    
+    
+    
+    <category term="闲言碎语" scheme="https://y1xi.fun/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    
+    <category term="成长规划" scheme="https://y1xi.fun/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/%E6%88%90%E9%95%BF%E8%A7%84%E5%88%92/"/>
+    
+    
+    <category term="反思" scheme="https://y1xi.fun/tags/%E5%8F%8D%E6%80%9D/"/>
+    
+    <category term="吐槽" scheme="https://y1xi.fun/tags/%E5%90%90%E6%A7%BD/"/>
+    
+    <category term="成长规划" scheme="https://y1xi.fun/tags/%E6%88%90%E9%95%BF%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Enscape</title>
+    <link href="https://y1xi.fun/enscape/"/>
+    <id>https://y1xi.fun/enscape/</id>
+    <published>2022-03-05T07:06:38.000Z</published>
+    <updated>2022-10-06T10:20:56.615Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;常用操作&quot;&gt;&lt;a href=&quot;#常用操作&quot; class=&quot;headerlink&quot; title=&quot;常用操作&quot;&gt;&lt;/a&gt;常用操作&lt;/h1&gt;&lt;p&gt;w a s d负责窗口视角的移动        e q上升 / 下降&lt;/p&gt;
+&lt;p&gt;按住shift快速移动       </summary>
+        
+      
+    
+    
+    
+    <category term="建筑学" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
+    
+    <category term="软件" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="https://y1xi.fun/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="pc" scheme="https://y1xi.fun/tags/pc/"/>
+    
+    <category term="学习指南" scheme="https://y1xi.fun/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    
+    <category term="渲染" scheme="https://y1xi.fun/tags/%E6%B8%B2%E6%9F%93/"/>
+    
+    <category term="Enscape" scheme="https://y1xi.fun/tags/Enscape/"/>
+    
+  </entry>
+  
+</feed>
