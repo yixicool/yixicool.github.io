@@ -6,7 +6,7 @@
   <link href="https://y1xi.fun/atom.xml" rel="self"/>
   
   <link href="https://y1xi.fun/"/>
-  <updated>2022-10-30T06:37:45.620Z</updated>
+  <updated>2022-11-14T13:22:30.240Z</updated>
   <id>https://y1xi.fun/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从贝塞尔曲线到Nurbs曲线</title>
+    <link href="https://y1xi.fun/from_Bezier_to_Nurbs/"/>
+    <id>https://y1xi.fun/from_Bezier_to_Nurbs/</id>
+    <published>2022-11-14T12:09:08.000Z</published>
+    <updated>2022-11-14T13:22:30.240Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="建筑学" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
+    
+    <category term="软件理论" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6%E7%90%86%E8%AE%BA/"/>
+    
+    
+    <category term="软件" scheme="https://y1xi.fun/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="建模" scheme="https://y1xi.fun/tags/%E5%BB%BA%E6%A8%A1/"/>
+    
+    <category term="建筑" scheme="https://y1xi.fun/tags/%E5%BB%BA%E7%AD%91/"/>
+    
+    <category term="软件理论" scheme="https://y1xi.fun/tags/%E8%BD%AF%E4%BB%B6%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>web_archiveⅢ：就这样沉默地走在中原大地上</title>
@@ -126,8 +159,16 @@
     <link href="https://y1xi.fun/hard-one/"/>
     <id>https://y1xi.fun/hard-one/</id>
     <published>2022-09-17T08:13:36.000Z</published>
-    <updated>2022-10-06T12:20:12.162Z</updated>
+    <updated>2022-11-14T13:10:05.368Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;待编辑……&quot;&gt;&lt;a href=&quot;#待编辑……&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
@@ -145,7 +186,7 @@
     <link href="https://y1xi.fun/gh-two/"/>
     <id>https://y1xi.fun/gh-two/</id>
     <published>2022-08-28T15:02:16.000Z</published>
-    <updated>2022-10-06T10:14:03.252Z</updated>
+    <updated>2022-11-14T13:09:46.782Z</updated>
     
     
       
@@ -317,7 +358,7 @@
     <link href="https://y1xi.fun/lightroom/"/>
     <id>https://y1xi.fun/lightroom/</id>
     <published>2022-07-02T09:49:39.000Z</published>
-    <updated>2022-10-06T10:17:23.255Z</updated>
+    <updated>2022-11-14T13:09:29.348Z</updated>
     
     
       
@@ -622,42 +663,6 @@
     <category term="成长规划" scheme="https://y1xi.fun/tags/%E6%88%90%E9%95%BF%E8%A7%84%E5%88%92/"/>
     
     <category term="吐槽" scheme="https://y1xi.fun/tags/%E5%90%90%E6%A7%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Enscape</title>
-    <link href="https://y1xi.fun/enscape/"/>
-    <id>https://y1xi.fun/enscape/</id>
-    <published>2022-03-05T07:06:38.000Z</published>
-    <updated>2022-10-06T10:20:56.615Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;常用操作&quot;&gt;&lt;a href=&quot;#常用操作&quot; class=&quot;headerlink&quot; title=&quot;常用操作&quot;&gt;&lt;/a&gt;常用操作&lt;/h1&gt;&lt;p&gt;w a s d负责窗口视角的移动        e q上升 / 下降&lt;/p&gt;
-&lt;p&gt;按住shift快速移动       </summary>
-        
-      
-    
-    
-    
-    <category term="建筑学" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
-    
-    <category term="软件" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="软件" scheme="https://y1xi.fun/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="pc" scheme="https://y1xi.fun/tags/pc/"/>
-    
-    <category term="学习指南" scheme="https://y1xi.fun/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
-    
-    <category term="渲染" scheme="https://y1xi.fun/tags/%E6%B8%B2%E6%9F%93/"/>
-    
-    <category term="Enscape" scheme="https://y1xi.fun/tags/Enscape/"/>
     
   </entry>
   

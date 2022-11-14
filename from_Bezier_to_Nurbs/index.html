@@ -1,0 +1,264 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>从贝塞尔曲线到Nurbs曲线 | 以西的小窝</title><meta name="keywords" content="软件,建模,建筑,软件理论"><meta name="author" content="以西"><meta name="copyright" content="以西"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言本学期学院安排了参数化的课程，本觉得可能不会讲软件原理部分而是直接上手实操，没想到马老师准备得非常充分，从Rhino的核心Nurbs曲线讲起，正巧之前自学时也产生了一些疑惑，例如对阶数 控制点 节点 关系等的理解，只是会用但并不知其背后的原理，故借此机会来做个整理以便于自己后续的学习理解 ps：看了好多教程不由得感叹，数学是一切学科的基础 贝塞尔(Bézier)曲线样条曲线的产生来源于生产实践">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从贝塞尔曲线到Nurbs曲线">
+<meta property="og:url" content="https://y1xi.fun/from_Bezier_to_Nurbs/index.html">
+<meta property="og:site_name" content="以西的小窝">
+<meta property="og:description" content="前言本学期学院安排了参数化的课程，本觉得可能不会讲软件原理部分而是直接上手实操，没想到马老师准备得非常充分，从Rhino的核心Nurbs曲线讲起，正巧之前自学时也产生了一些疑惑，例如对阶数 控制点 节点 关系等的理解，只是会用但并不知其背后的原理，故借此机会来做个整理以便于自己后续的学习理解 ps：看了好多教程不由得感叹，数学是一切学科的基础 贝塞尔(Bézier)曲线样条曲线的产生来源于生产实践">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic.imgdb.cn/item/6372418c16f2c2beb1e9aee8.jpg">
+<meta property="article:published_time" content="2022-11-14T12:09:08.000Z">
+<meta property="article:modified_time" content="2022-11-14T13:22:30.240Z">
+<meta property="article:author" content="以西">
+<meta property="article:tag" content="软件">
+<meta property="article:tag" content="建模">
+<meta property="article:tag" content="建筑">
+<meta property="article:tag" content="软件理论">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/6372418c16f2c2beb1e9aee8.jpg"><link rel="shortcut icon" href="https://pic.imgdb.cn/item/627238140947543129f6fccb.jpg"><link rel="canonical" href="https://y1xi.fun/from_Bezier_to_Nurbs/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 以西","link":"链接: ","source":"来源: 以西的小窝","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"top-right"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '从贝塞尔曲线到Nurbs曲线',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-11-14 21:22:30'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/mycss.css"><link rel="stylesheet" href="/css/footercss.css"><link rel="stylesheet" href="/css/background.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="以西的小窝" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/627238140947543129f6fccb.jpg" onerror="onerror=null;src='null'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">34</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">48</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">21</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/broken-thoughts/"><i class="fa-fw fas fa-blog"></i><span> 碎碎念</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/myself/"><i class="fa-fw fas fa-cat"></i><span> Myself</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.imgdb.cn/item/6372418c16f2c2beb1e9aee8.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">以西的小窝</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/broken-thoughts/"><i class="fa-fw fas fa-blog"></i><span> 碎碎念</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/myself/"><i class="fa-fw fas fa-cat"></i><span> Myself</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">从贝塞尔曲线到Nurbs曲线</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-11-14T12:09:08.000Z" title="发表于 2022-11-14 20:09:08">2022-11-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-11-14T13:22:30.240Z" title="更新于 2022-11-14 21:22:30">2022-11-14</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/">建筑学</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6%E7%90%86%E8%AE%BA/">软件理论</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>8分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本学期学院安排了参数化的课程，本觉得可能不会讲软件原理部分而是直接上手实操，没想到马老师准备得非常充分，从Rhino的核心Nurbs曲线讲起，正巧之前自学时也产生了一些疑惑，例如对<strong>阶数 控制点 节点 关系</strong>等的理解，只是会用但并不知其背后的原理，故借此机会来做个整理以便于自己后续的学习理解</p>
+<p>ps：看了好多教程不由得感叹，数学是一切学科的基础</p>
+<h1 id="贝塞尔-Bezier-曲线"><a href="#贝塞尔-Bezier-曲线" class="headerlink" title="贝塞尔(Bézier)曲线"></a>贝塞尔(Bézier)曲线</h1><p><strong>样条曲线的产生来源于生产实践</strong>，以前造船工人想要建立船身的曲线，往往会将一个极富弹性的钢条夹在压铁之间，调整压铁的位置，使其通过特定的限制点。</p>
+<p>钢条在压铁的作用下因受力而产生弯曲变形，便得到一条十分光滑的曲线，这便是<strong>样条曲线最早期的概念</strong></p>
+<p>但这样的样条曲线是借助于各种<strong>物理手段</strong>得到的，无法精确复刻。如何将一段曲线抽象成一个<strong>数学模型</strong></p>
+<p>于是在1962年，一个叫<strong>皮埃尔·贝塞尔</strong>（Pierre Bézier）的法国工程师在设计汽车造型时，研究了一种矢量绘制曲线的方法，并给出了详细的计算公式</p>
+<p>贝塞尔曲线的一大优点就是<strong>只需要很少的控制点就能够生成复杂的平滑曲线</strong></p>
+<p>贝塞尔曲线由<strong>两个端点和若干个控制点</strong>组成，通过改变控制点位置就可以改变整条曲线的形状</p>
+<p>N个控制点对应着N-1阶的贝塞尔曲线，并且可以通过<strong>递归</strong>的方式来绘制</p>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><p>1、贝塞尔曲线是一段开始于P0并结束于Pn的曲线，具有<strong>端点插值法属性</strong>。</p>
+<p>2、贝塞尔曲线是直线的充分必要条件是所有控制点都共线。</p>
+<p>3、贝塞尔曲线可在任意点切割成多条<strong>子曲线</strong>，每一条子曲线仍是贝塞尔曲线。</p>
+<p>4、一些简单的曲线（如圆、椭圆、双曲线等）无法通过贝塞尔曲线精确描述，只能用分段贝塞尔曲线近似拟合。</p>
+<p>5、对于给定的贝塞尔曲线，无法作固定数值的偏移，即偏移后的曲线无法用贝塞尔曲线精确的描述。</p>
+<p>6、改变贝塞尔曲线的任意一个控制点，都会改变曲线的形状。</p>
+<p>7、对于复杂的曲线，如果想仅用一段贝塞尔曲线获得目标曲线，就需要通过增加控制点来进行插值。</p>
+<p><strong>两个重要特性</strong>：</p>
+<ul>
+<li>一是<strong>曲线的阶数=控制点个数-1</strong>，想要增加更多控制点进行插值，就需要更复杂的计算</li>
+<li>二是<strong>牵一发而动全身</strong>，移动一个控制点，整段曲线的形状都会改变</li>
+</ul>
+<h2 id="NURBS曲线"><a href="#NURBS曲线" class="headerlink" title="NURBS曲线"></a>NURBS曲线</h2><p>为了克服上述贝塞尔曲线的缺点，<strong>B样条曲线就应运而生了</strong></p>
+<p>NURBS是<strong>非均匀有理B样条</strong>（Non-Uniform Rational B-Splines）的缩写。</p>
+<p>1991年，国际标准化组织（ISO）颁布的工业产品数据交换标准STEP中，把NURBS作为定义工业产品几何形状的<strong>唯一数学方法</strong>。</p>
+<h3 id="B-Splines（B样条）："><a href="#B-Splines（B样条）：" class="headerlink" title="B-Splines（B样条）："></a>B-Splines（B样条）：</h3><p>B样条，也叫<strong>基样条</strong>，是<strong>Basis-Splines</strong>的缩写，它是<strong>贝塞尔曲线的一般化</strong>。</p>
+<p>B样条可以指定<strong>阶数</strong>，增加任意数量的<strong>控制点</strong>，并通过<strong>节点</strong>对曲线分段，解决了贝塞尔曲线无法局部修改的问题。</p>
+<p>B样条的解决方案是通过将<strong>一段段贝塞尔曲线拼成一条完整的多段曲线实现的</strong>。</p>
+<p>但B样条是低级别的<strong>多项式样条的集合</strong>，仍然无法绘制圆、椭圆、双曲线等类型的曲线。</p>
+<p>为了适应更复杂的曲线，最后从<strong>B样条又引申出了NURBS样条</strong>。</p>
+<h3 id="NURBS曲线："><a href="#NURBS曲线：" class="headerlink" title="NURBS曲线："></a>NURBS曲线：</h3><h4 id="阶数（Degree）"><a href="#阶数（Degree）" class="headerlink" title="阶数（Degree）"></a>阶数（Degree）</h4><p>这里的阶数与贝塞尔曲线的阶数是一个概念，即<strong>多项式系数的最高次幂</strong>。</p>
+<p>从数学的角度看，阶数是多项式中影响力最大的因素，直接决定了曲线的性质。</p>
+<p>从NURBS建模的角度看，<strong>阶数是曲线的一段跨距内（起点和终点之间），最大可弯曲的次数</strong>。</p>
+<p>曲线的次数越高，需要的计算就越复杂。</p>
+<h4 id="节点（Knot）"><a href="#节点（Knot）" class="headerlink" title="节点（Knot）"></a>节点（Knot）</h4><p>上面说过，B样条是把贝塞尔曲线拼接起来的多段曲线。</p>
+<p>也就是说<strong>人为的把目标曲线分为若干个区段，区段与区段交接的部分就叫节点</strong>。</p>
+<p>目的是尽量使得各个部分有所影响但也有一定独立性。</p>
+<p>这也是为什么在B样条中，有时一个控制点的改变，不会影响到整条曲线，而只影响到局部的原因。</p>
+<p>节点划分影响到权重计算，实现局部性影响的原理应该是在生成某区间内的点时，某些控制点前的权重值会为0，即对该点没有贡献，所以才有上述特点。</p>
+<h4 id="控制点（CV，Control-Vertex）"><a href="#控制点（CV，Control-Vertex）" class="headerlink" title="控制点（CV，Control Vertex）"></a>控制点（CV，Control Vertex）</h4><p>即控制曲线的点，全部位于曲线之外，与贝塞尔曲线的控制点概念相同。</p>
+<p>但不同的是<strong>B样条多项式的阶数可独立于控制点数目</strong>。</p>
+<p>例如3阶贝塞尔曲线<strong>有且只有</strong>4个控制点，但3阶B样条曲线可以有无数个控制点（前提是不能少于4个），因为B样条曲线可以叠加多个贝塞尔曲线</p>
+<h4 id="控制点的权值"><a href="#控制点的权值" class="headerlink" title="控制点的权值"></a>控制点的权值</h4><p>控制点的权值是<strong>控制点对曲线或曲面的牵引力。</strong></p>
+<p>权值越高，曲线或曲面会越接近控制点。本质上是改变了该控制点前面的系数。</p>
+<h4 id="控制点与编辑点（EP，EditPoint）的关系"><a href="#控制点与编辑点（EP，EditPoint）的关系" class="headerlink" title="控制点与编辑点（EP，EditPoint）的关系"></a>控制点与编辑点（EP，EditPoint）的关系</h4><p>编辑点全部位于曲线之上，并且<strong>编辑点的数量=控制点的数量</strong>。编辑点是通过计算<strong>节点</strong>平均值得到的。</p>
+<p>例如一个3阶曲线的节点向量为（0, 0, 0, 1, 2, 3, 3, 3），那么其编辑点的向量为（0, 1/3, 1, 2, 8/3, 3）【个人理解是每三个数取一个平均值】，所以<strong>编辑点可能与节点重合</strong>。</p>
+<p>编辑点和控制点一样都可以改变曲线的形状，但<strong>移动一个编辑点会影响整条曲线的形状</strong>，而移动一个控制点只会改变一部分曲线的形状。</p>
+<p>当需要曲线上某一点精确通过某一特定位置时，编辑点的优势就体现出来了。</p>
+<p>其中需要说明的是，<strong>曲线的两个端点</strong>（起始点和终止点）<strong>，同样也是曲线的控制点、编辑点和节点。</strong></p>
+<h4 id="控制点与节点、阶数之间的数量关系："><a href="#控制点与节点、阶数之间的数量关系：" class="headerlink" title="控制点与节点、阶数之间的数量关系："></a>控制点与节点、阶数之间的数量关系：</h4><p>在B样条曲线中，<strong>控制点数量=内部节点数量（不包括两个端点）+阶数+1</strong>。</p>
+<p>当曲线内部节点为0时，则为<strong>最简曲线</strong>，即退化为<strong>贝塞尔曲线，</strong>此时其<strong>控制点数量=阶数+1</strong>。</p>
+<p>所以在进行Rhino建模时，尽量使用<strong>最简曲线</strong>，这样通过曲线生成的曲面质量最高，也方便后期的修改。</p>
+<h4 id="Rational（有理）："><a href="#Rational（有理）：" class="headerlink" title="Rational（有理）："></a>Rational（有理）：</h4><p>有了刚刚对<strong>控制点</strong>和<strong>权值</strong>概念的铺垫，“有理”这个概念就更容易理解了。</p>
+<p><strong>曲线是否有理，取决于曲线上控制点的「权值」是否相等。</strong></p>
+<ul>
+<li>若曲线控制点<strong>「权值全部相等」</strong>，则为<strong>「非有理曲线」</strong></li>
+<li>若曲线控制点<strong>「权值不相等」</strong>，则为<strong>「有理曲线」</strong></li>
+</ul>
+<h4 id="Non-Uniform（非均匀）："><a href="#Non-Uniform（非均匀）：" class="headerlink" title="Non-Uniform（非均匀）："></a>Non-Uniform（非均匀）：</h4><p>曲线是否均匀这个概念稍微比较抽象。一句话概括就是：</p>
+<p><strong>曲线是否均匀，取决于曲线「节点的差异值」是否相同。</strong></p>
+<ul>
+<li>若曲线节点「<strong>差异值相同」</strong>，则「<strong>均匀</strong>」曲线</li>
+<li>若曲线节点「<strong>差异值不同」</strong>，则为「<strong>非均匀</strong>」曲线</li>
+</ul>
+<p>这里就涉及到了另一个概念，什么是“<strong>节点的差异值</strong>”？</p>
+<p>当在Rhino中用内插点的方式建立曲线时，这些<strong>内插点会转化为曲线节点的参数值</strong>，是曲线节点的一个属性，数值我们并看不到。</p>
+<p>而曲线节点参数值的<strong>参数间距</strong>，就是<strong>节点的差异值</strong>。决定了曲线参数化的情况。参数间距也是一个抽象的概念，并不是节点之间的距离。</p>
+<ul>
+<li>当节点的参数间距都是「1」的情况下，称为「均匀」；</li>
+<li>当节点的参数间距都是「内插点之间距离」的情况下，称为「弦长」；</li>
+<li>当节点的参数间距都是「内插点之间距离的平方根」的情况下，称为「弦长平方根」。</li>
+</ul>
+<p>其中，<strong>差异值为“弦长”和“弦长平方根”都是非均匀的</strong>，只有<strong>差异值都为1的情况下，才是均匀的</strong>。</p>
+<p>在Rhino中，用<strong>“控制点”建立的曲线默认是均匀曲线（差异值都为1）</strong>，而用“内插点”建立的曲线，需要手动设定是否为均匀曲线。</p>
+<h3 id="NURBS曲线概念的小结："><a href="#NURBS曲线概念的小结：" class="headerlink" title="NURBS曲线概念的小结："></a>NURBS曲线概念的小结：</h3><p>综上所述，贝塞尔曲线、有理/非有理、均匀/非均匀B样条都被统一到NURBS曲线中。</p>
+<p>其中贝塞尔曲线是最早提出也是最简单的一种曲线，但无法局部修改。</p>
+<p>B样条曲线稍后提出，解决了贝塞尔曲线无法局部修改的缺点。</p>
+<p>NURBS曲线最后提出，定义最复杂，能表达的曲线最灵活。主要是解决B样条不能画椭圆、圆和双曲线的问题。</p>
+<h3 id="NURBS曲线的三种类型"><a href="#NURBS曲线的三种类型" class="headerlink" title="NURBS曲线的三种类型"></a>NURBS曲线的三种类型</h3><p>以Rhino软件为例</p>
+<ul>
+<li><strong>开放NURBS曲线</strong>：起点与终点不重合。</li>
+<li><strong>封闭NURBS曲线</strong>：起点与终点重合，所以曲线的控制点只有一个重复。</li>
+<li><strong>周期NURBS曲线</strong>：控制点连线形成封闭的多边形，实际控制点数量=可见控制点数量+阶数</li>
+</ul>
+<h3 id="NURBS曲线的几何连续性"><a href="#NURBS曲线的几何连续性" class="headerlink" title="NURBS曲线的几何连续性"></a>NURBS曲线的几何连续性</h3><p>曲线的<strong>「几何连续性」</strong>描述的是<strong>两段曲线拼合之后，生成的新曲线的交接部分的顺滑程度</strong>。数字越高，连续性越好</p>
+<ul>
+<li><strong>不连续</strong>：两个曲线断开，不存在连续性；</li>
+<li><strong>G0连续</strong>：<strong>位置连续</strong>，两个曲线仅仅是端点重合；</li>
+<li><strong>G1连续</strong>：<strong>相切连续</strong>，两个曲线交点处的切线是一致的（即切线斜率相同）；</li>
+<li><strong>G2连续</strong>：<strong>曲率连续</strong>，两个曲线交点处的曲率是一致的（但曲率图形不可导）；</li>
+<li><strong>G3连续</strong>：两个曲线交点处的曲率的变化率是一致的（曲率图形可导）；<br>……</li>
+<li><strong>Gn连续</strong>：两个曲线交点处的曲率的变化率的变化率的变化率的……是一致的。</li>
+</ul>
+<p>一般来说，两条曲线能做到G1连续（相切连续），肉眼就已经分辨不出明显的不协调感了。如果不是制作高精度的曲面，例如汽车车身，其实做到G2连续（曲率连续），就已经能满足绝大多数建模精度的要求了</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">以西</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://y1xi.fun/from_Bezier_to_Nurbs/">https://y1xi.fun/from_Bezier_to_Nurbs/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://y1xi.fun" target="_blank">以西的小窝</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%BD%AF%E4%BB%B6/">软件</a><a class="post-meta__tags" href="/tags/%E5%BB%BA%E6%A8%A1/">建模</a><a class="post-meta__tags" href="/tags/%E5%BB%BA%E7%AD%91/">建筑</a><a class="post-meta__tags" href="/tags/%E8%BD%AF%E4%BB%B6%E7%90%86%E8%AE%BA/">软件理论</a></div><div class="post_share"><div class="social-share" data-image="https://pic.imgdb.cn/item/6372418c16f2c2beb1e9aee8.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://pic.imgdb.cn/item/62723c8d0947543129022622.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/62723c8d0947543129022622.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://pic.imgdb.cn/item/62723cb70947543129028a17.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/62723cb70947543129028a17.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/web_archive_3/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic1.imgdb.cn/item/635e16af16f2c2beb14bb8cb.jpg" onerror="onerror=null;src='/null'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">web_archiveⅢ：就这样沉默地走在中原大地上</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/627238140947543129f6fccb.jpg" onerror="this.onerror=null;this.src='/null'" alt="avatar"/></div><div class="author-info__name">以西</div><div class="author-info__description">天气真好，睡了好久</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">34</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">48</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">21</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://t.me/csmysh"><i class="fab fa-telegram-plane"></i><span>Telegram Chat</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://pic.imgdb.cn/item/62723c37094754312901619e.jpg" target="_blank" title=""><i class="fab fa-qq"></i></a><a class="social-icon" href="https://pic.imgdb.cn/item/62723c250947543129013879.jpg" target="_blank" title=""><i class="fab fa-weixin"></i></a><a class="social-icon" href="mailto:y1xi_bug@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">今天想通了，明天又想不通了，反反复复，反反复复就在某个瞬间突然出现，随之而来的是无休止的难过，但是我不后悔热烈地表达过。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B4%9D%E5%A1%9E%E5%B0%94-Bezier-%E6%9B%B2%E7%BA%BF"><span class="toc-text">贝塞尔(Bézier)曲线</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E6%80%A7"><span class="toc-text">特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NURBS%E6%9B%B2%E7%BA%BF"><span class="toc-text">NURBS曲线</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#B-Splines%EF%BC%88B%E6%A0%B7%E6%9D%A1%EF%BC%89%EF%BC%9A"><span class="toc-text">B-Splines（B样条）：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#NURBS%E6%9B%B2%E7%BA%BF%EF%BC%9A"><span class="toc-text">NURBS曲线：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%98%B6%E6%95%B0%EF%BC%88Degree%EF%BC%89"><span class="toc-text">阶数（Degree）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%8A%82%E7%82%B9%EF%BC%88Knot%EF%BC%89"><span class="toc-text">节点（Knot）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E7%82%B9%EF%BC%88CV%EF%BC%8CControl-Vertex%EF%BC%89"><span class="toc-text">控制点（CV，Control Vertex）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E7%82%B9%E7%9A%84%E6%9D%83%E5%80%BC"><span class="toc-text">控制点的权值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E7%82%B9%E4%B8%8E%E7%BC%96%E8%BE%91%E7%82%B9%EF%BC%88EP%EF%BC%8CEditPoint%EF%BC%89%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-text">控制点与编辑点（EP，EditPoint）的关系</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E7%82%B9%E4%B8%8E%E8%8A%82%E7%82%B9%E3%80%81%E9%98%B6%E6%95%B0%E4%B9%8B%E9%97%B4%E7%9A%84%E6%95%B0%E9%87%8F%E5%85%B3%E7%B3%BB%EF%BC%9A"><span class="toc-text">控制点与节点、阶数之间的数量关系：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Rational%EF%BC%88%E6%9C%89%E7%90%86%EF%BC%89%EF%BC%9A"><span class="toc-text">Rational（有理）：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Non-Uniform%EF%BC%88%E9%9D%9E%E5%9D%87%E5%8C%80%EF%BC%89%EF%BC%9A"><span class="toc-text">Non-Uniform（非均匀）：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#NURBS%E6%9B%B2%E7%BA%BF%E6%A6%82%E5%BF%B5%E7%9A%84%E5%B0%8F%E7%BB%93%EF%BC%9A"><span class="toc-text">NURBS曲线概念的小结：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#NURBS%E6%9B%B2%E7%BA%BF%E7%9A%84%E4%B8%89%E7%A7%8D%E7%B1%BB%E5%9E%8B"><span class="toc-text">NURBS曲线的三种类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#NURBS%E6%9B%B2%E7%BA%BF%E7%9A%84%E5%87%A0%E4%BD%95%E8%BF%9E%E7%BB%AD%E6%80%A7"><span class="toc-text">NURBS曲线的几何连续性</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2022 By 以西</div><div class="footer_custom_text">来都来了，确定不收藏下再走嘛 Ψ(￣∀￣)Ψ</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.7" zIndex="-1" mobile="true" data-click="false"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="true" data-text="民主,文明,和谐,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="true" async="async"></script></div><!-- hexo injector body_end start --><script data-pjax>function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='/'|| '/' ==='all')){
+
+            history_calendar_injector_config()
+        } </script><script data-pjax  src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><script data-pjax>function electric_clock_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>';
+                console.log('已挂载electric_clock')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='/'|| '/' ==='all')){
+
+            electric_clock_injector_config()
+        } </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax  src="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script></body></html>
