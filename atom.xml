@@ -6,7 +6,7 @@
   <link href="https://y1xi.fun/atom.xml" rel="self"/>
   
   <link href="https://y1xi.fun/"/>
-  <updated>2022-11-14T13:22:30.240Z</updated>
+  <updated>2022-11-23T15:22:19.150Z</updated>
   <id>https://y1xi.fun/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>web_archiveⅣ：十问</title>
+    <link href="https://y1xi.fun/web_archive_4/"/>
+    <id>https://y1xi.fun/web_archive_4/</id>
+    <published>2022-11-23T15:04:33.000Z</published>
+    <updated>2022-11-23T15:22:19.150Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;关于栏目&quot;&gt;&lt;a href=&quot;#关于栏目&quot; class=&quot;headerlink&quot; title=&quot;关于栏目&quot;&gt;&lt;/a&gt;关于栏目&lt;/h2&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;&lt;del&gt;web_archive -</summary>
+        
+      
+    
+    
+    
+    <category term="互联网的记忆" scheme="https://y1xi.fun/categories/%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E8%AE%B0%E5%BF%86/"/>
+    
+    
+    <category term="web_archive" scheme="https://y1xi.fun/tags/web-archive/"/>
+    
+  </entry>
+  
+  <entry>
     <title>从贝塞尔曲线到Nurbs曲线</title>
     <link href="https://y1xi.fun/from_Bezier_to_Nurbs/"/>
     <id>https://y1xi.fun/from_Bezier_to_Nurbs/</id>
     <published>2022-11-14T12:09:08.000Z</published>
-    <updated>2022-11-14T13:22:30.240Z</updated>
+    <updated>2022-11-21T03:18:30.453Z</updated>
     
     
       
@@ -564,6 +589,52 @@
   </entry>
   
   <entry>
+    <title>Vray</title>
+    <link href="https://y1xi.fun/Vray/"/>
+    <id>https://y1xi.fun/Vray/</id>
+    <published>2022-03-16T11:44:39.000Z</published>
+    <updated>2022-11-16T13:26:24.874Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;渲染思路&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;模型准备&lt;ul&gt;
+&lt;li&gt;地形&lt;/li&gt;
+&lt;li&gt;代理模型&lt;/li&gt;
+&lt;li&gt;构图&lt;ul&gt;
+&lt;li&gt;找角度注意要开启两点透视（rhino在设置视图中调节）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;完善模型贴图&lt;/</summary>
+        
+      
+    
+    
+    
+    <category term="建筑学" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
+    
+    <category term="软件" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="https://y1xi.fun/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="pc" scheme="https://y1xi.fun/tags/pc/"/>
+    
+    <category term="学习指南" scheme="https://y1xi.fun/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    
+    <category term="渲染" scheme="https://y1xi.fun/tags/%E6%B8%B2%E6%9F%93/"/>
+    
+    <category term="Vray" scheme="https://y1xi.fun/tags/Vray/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python基础语法学习归档</title>
     <link href="https://y1xi.fun/python/"/>
     <id>https://y1xi.fun/python/</id>
@@ -590,79 +661,6 @@
     <category term="学习指南" scheme="https://y1xi.fun/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
     
     <category term="python" scheme="https://y1xi.fun/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Rhino</title>
-    <link href="https://y1xi.fun/rhino/"/>
-    <id>https://y1xi.fun/rhino/</id>
-    <published>2022-03-08T09:40:28.000Z</published>
-    <updated>2022-10-29T11:59:05.999Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;犀牛的建模逻辑是由线到面到体，而且由线到体的过程不是推敲的过程，而是生成的过程，面和体的形状由线来生成，所以建模时要注意对线条的把控，修改模型也要回到对线的调整上去&lt;/p&gt;
-&lt;p&gt;Nurbs曲面&lt;/p&gt;
-&lt;p&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="建筑学" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
-    
-    <category term="软件" scheme="https://y1xi.fun/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="软件" scheme="https://y1xi.fun/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="pc" scheme="https://y1xi.fun/tags/pc/"/>
-    
-    <category term="学习指南" scheme="https://y1xi.fun/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
-    
-    <category term="效率" scheme="https://y1xi.fun/tags/%E6%95%88%E7%8E%87/"/>
-    
-    <category term="建模" scheme="https://y1xi.fun/tags/%E5%BB%BA%E6%A8%A1/"/>
-    
-    <category term="建筑" scheme="https://y1xi.fun/tags/%E5%BB%BA%E7%AD%91/"/>
-    
-    <category term="Rhino" scheme="https://y1xi.fun/tags/Rhino/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数字时代的反思</title>
-    <link href="https://y1xi.fun/Reflections-of-digital/"/>
-    <id>https://y1xi.fun/Reflections-of-digital/</id>
-    <published>2022-03-06T11:14:12.000Z</published>
-    <updated>2022-10-06T12:17:51.152Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;本文摘选于&lt;a href=&quot;https://sspai.com/matrix&quot;&gt;Matrix&lt;/a&gt;社区&lt;/p&gt;
-&lt;p&gt;原文地址：&lt;a href=&quot;https://sspai.com/post/71545&quot;&gt;养成好习惯01：放下手机，远离屏幕 - 少数派</summary>
-        
-      
-    
-    
-    
-    <category term="闲言碎语" scheme="https://y1xi.fun/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
-    
-    <category term="成长规划" scheme="https://y1xi.fun/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/%E6%88%90%E9%95%BF%E8%A7%84%E5%88%92/"/>
-    
-    
-    <category term="反思" scheme="https://y1xi.fun/tags/%E5%8F%8D%E6%80%9D/"/>
-    
-    <category term="成长规划" scheme="https://y1xi.fun/tags/%E6%88%90%E9%95%BF%E8%A7%84%E5%88%92/"/>
-    
-    <category term="吐槽" scheme="https://y1xi.fun/tags/%E5%90%90%E6%A7%BD/"/>
     
   </entry>
   
