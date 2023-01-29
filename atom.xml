@@ -6,7 +6,7 @@
   <link href="https://www.y1xi.eu.org/atom.xml" rel="self"/>
   
   <link href="https://www.y1xi.eu.org/"/>
-  <updated>2023-01-28T11:20:08.984Z</updated>
+  <updated>2023-01-29T05:38:33.307Z</updated>
   <id>https://www.y1xi.eu.org/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>中国建筑史</title>
-    <link href="https://www.y1xi.eu.org/hard-one/"/>
-    <id>https://www.y1xi.eu.org/hard-one/</id>
+    <link href="https://www.y1xi.eu.org/History_of_Chinese_Architecture/"/>
+    <id>https://www.y1xi.eu.org/History_of_Chinese_Architecture/</id>
     <published>2023-01-27T08:13:36.000Z</published>
-    <updated>2023-01-28T11:20:08.984Z</updated>
+    <updated>2023-01-29T05:38:33.307Z</updated>
     
     
       
@@ -40,6 +40,10 @@
     
     
     <category term="考研" scheme="https://www.y1xi.eu.org/tags/%E8%80%83%E7%A0%94/"/>
+    
+    <category term="古建" scheme="https://www.y1xi.eu.org/tags/%E5%8F%A4%E5%BB%BA/"/>
+    
+    <category term="建筑史" scheme="https://www.y1xi.eu.org/tags/%E5%BB%BA%E7%AD%91%E5%8F%B2/"/>
     
   </entry>
   
