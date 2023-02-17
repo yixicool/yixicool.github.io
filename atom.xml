@@ -6,7 +6,7 @@
   <link href="https://y1xi.eu.org/atom.xml" rel="self"/>
   
   <link href="https://y1xi.eu.org/"/>
-  <updated>2023-02-14T13:57:14.328Z</updated>
+  <updated>2023-02-16T13:50:26.425Z</updated>
   <id>https://y1xi.eu.org/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://y1xi.eu.org/History_of_Chinese_Architecture/"/>
     <id>https://y1xi.eu.org/History_of_Chinese_Architecture/</id>
     <published>2023-01-27T08:13:36.000Z</published>
-    <updated>2023-02-14T13:57:14.328Z</updated>
+    <updated>2023-02-16T13:50:26.425Z</updated>
     
     
       
@@ -69,6 +69,25 @@
     
     
     <category term="消费陷阱" scheme="https://y1xi.eu.org/tags/%E6%B6%88%E8%B4%B9%E9%99%B7%E9%98%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>快题设计</title>
+    <link href="https://y1xi.eu.org/Rapid_Design/"/>
+    <id>https://y1xi.eu.org/Rapid_Design/</id>
+    <published>2023-01-01T08:01:47.000Z</published>
+    <updated>2023-02-16T08:03:45.002Z</updated>
+    
+    
+    
+    
+    <category term="建筑学" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
+    
+    <category term="漫漫研途" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E6%BC%AB%E6%BC%AB%E7%A0%94%E9%80%94/"/>
+    
+    
+    <category term="考研" scheme="https://y1xi.eu.org/tags/%E8%80%83%E7%A0%94/"/>
     
   </entry>
   
@@ -614,52 +633,6 @@
     <category term="python" scheme="https://y1xi.eu.org/tags/python/"/>
     
     <category term="webspider" scheme="https://y1xi.eu.org/tags/webspider/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vray</title>
-    <link href="https://y1xi.eu.org/Vray/"/>
-    <id>https://y1xi.eu.org/Vray/</id>
-    <published>2022-03-16T11:44:39.000Z</published>
-    <updated>2022-11-16T13:26:24.874Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;渲染思路&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;模型准备&lt;ul&gt;
-&lt;li&gt;地形&lt;/li&gt;
-&lt;li&gt;代理模型&lt;/li&gt;
-&lt;li&gt;构图&lt;ul&gt;
-&lt;li&gt;找角度注意要开启两点透视（rhino在设置视图中调节）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;完善模型贴图&lt;/</summary>
-        
-      
-    
-    
-    
-    <category term="建筑学" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
-    
-    <category term="软件" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="pc" scheme="https://y1xi.eu.org/tags/pc/"/>
-    
-    <category term="学习指南" scheme="https://y1xi.eu.org/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
-    
-    <category term="渲染" scheme="https://y1xi.eu.org/tags/%E6%B8%B2%E6%9F%93/"/>
-    
-    <category term="Vray" scheme="https://y1xi.eu.org/tags/Vray/"/>
     
   </entry>
   
