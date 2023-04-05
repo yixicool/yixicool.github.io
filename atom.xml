@@ -6,7 +6,7 @@
   <link href="https://y1xi.eu.org/atom.xml" rel="self"/>
   
   <link href="https://y1xi.eu.org/"/>
-  <updated>2023-03-23T11:54:04.703Z</updated>
+  <updated>2023-04-04T15:14:40.620Z</updated>
   <id>https://y1xi.eu.org/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://y1xi.eu.org/History_of_Foreign_Architecture/"/>
     <id>https://y1xi.eu.org/History_of_Foreign_Architecture/</id>
     <published>2023-02-27T11:29:13.000Z</published>
-    <updated>2023-03-23T11:54:04.703Z</updated>
+    <updated>2023-04-04T15:14:40.620Z</updated>
     
     
       
@@ -100,25 +100,6 @@
     
     
     <category term="消费陷阱" scheme="https://y1xi.eu.org/tags/%E6%B6%88%E8%B4%B9%E9%99%B7%E9%98%B1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>快题设计</title>
-    <link href="https://y1xi.eu.org/Rapid_Design/"/>
-    <id>https://y1xi.eu.org/Rapid_Design/</id>
-    <published>2023-01-01T08:01:47.000Z</published>
-    <updated>2023-03-05T11:37:15.794Z</updated>
-    
-    
-    
-    
-    <category term="建筑学" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
-    
-    <category term="漫漫研途" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E6%BC%AB%E6%BC%AB%E7%A0%94%E9%80%94/"/>
-    
-    
-    <category term="考研" scheme="https://y1xi.eu.org/tags/%E8%80%83%E7%A0%94/"/>
     
   </entry>
   
@@ -630,6 +611,40 @@
     <category term="Rhino" scheme="https://y1xi.eu.org/tags/Rhino/"/>
     
     <category term="Grasshopper" scheme="https://y1xi.eu.org/tags/Grasshopper/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python爬虫学习归档</title>
+    <link href="https://y1xi.eu.org/py_spider/"/>
+    <id>https://y1xi.eu.org/py_spider/</id>
+    <published>2022-03-27T09:27:44.000Z</published>
+    <updated>2023-01-24T15:43:38.578Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;爬虫，从本质上来说，就是利用程序在网上拿到对自身有价值的数据&lt;/p&gt;
+&lt;p&gt;以百度为例，在搜索的时候仔细看，会发现每个搜索结果下面都有一个百度快照&lt;/p&gt;
+&lt;p&gt;点击百度快照，会发现网址的开头有baidu这个词，也就是说这个网页属于百度&lt;/p&gt;
+&lt;p&gt;这就是因为百度会源源不</summary>
+        
+      
+    
+    
+    
+    <category term="码上" scheme="https://y1xi.eu.org/categories/%E7%A0%81%E4%B8%8A/"/>
+    
+    <category term="python" scheme="https://y1xi.eu.org/categories/%E7%A0%81%E4%B8%8A/python/"/>
+    
+    
+    <category term="学习指南" scheme="https://y1xi.eu.org/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    
+    <category term="python" scheme="https://y1xi.eu.org/tags/python/"/>
+    
+    <category term="webspider" scheme="https://y1xi.eu.org/tags/webspider/"/>
     
   </entry>
   
