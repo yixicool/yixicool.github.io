@@ -6,7 +6,7 @@
   <link href="https://y1xi.eu.org/atom.xml" rel="self"/>
   
   <link href="https://y1xi.eu.org/"/>
-  <updated>2023-04-04T15:14:40.620Z</updated>
+  <updated>2023-04-13T12:44:19.649Z</updated>
   <id>https://y1xi.eu.org/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>英语语法自用手册</title>
+    <link href="https://y1xi.eu.org/grammar/"/>
+    <id>https://y1xi.eu.org/grammar/</id>
+    <published>2023-04-13T12:36:51.000Z</published>
+    <updated>2023-04-13T12:44:19.649Z</updated>
+    
+    
+    
+    
+    <category term="食用手册" scheme="https://y1xi.eu.org/categories/%E9%A3%9F%E7%94%A8%E6%89%8B%E5%86%8C/"/>
+    
+    
+    <category term="学习指南" scheme="https://y1xi.eu.org/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    
+    <category term="效率" scheme="https://y1xi.eu.org/tags/%E6%95%88%E7%8E%87/"/>
+    
+    <category term="English" scheme="https://y1xi.eu.org/tags/English/"/>
+    
+  </entry>
+  
+  <entry>
     <title>外国建筑史</title>
     <link href="https://y1xi.eu.org/History_of_Foreign_Architecture/"/>
     <id>https://y1xi.eu.org/History_of_Foreign_Architecture/</id>
     <published>2023-02-27T11:29:13.000Z</published>
-    <updated>2023-04-04T15:14:40.620Z</updated>
+    <updated>2023-04-19T06:22:31.985Z</updated>
     
     
       
@@ -52,7 +73,7 @@
     <link href="https://y1xi.eu.org/History_of_Chinese_Architecture/"/>
     <id>https://y1xi.eu.org/History_of_Chinese_Architecture/</id>
     <published>2023-01-27T08:13:36.000Z</published>
-    <updated>2023-03-17T15:11:14.373Z</updated>
+    <updated>2023-04-19T04:38:45.101Z</updated>
     
     
       
@@ -611,40 +632,6 @@
     <category term="Rhino" scheme="https://y1xi.eu.org/tags/Rhino/"/>
     
     <category term="Grasshopper" scheme="https://y1xi.eu.org/tags/Grasshopper/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python爬虫学习归档</title>
-    <link href="https://y1xi.eu.org/py_spider/"/>
-    <id>https://y1xi.eu.org/py_spider/</id>
-    <published>2022-03-27T09:27:44.000Z</published>
-    <updated>2023-01-24T15:43:38.578Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;爬虫，从本质上来说，就是利用程序在网上拿到对自身有价值的数据&lt;/p&gt;
-&lt;p&gt;以百度为例，在搜索的时候仔细看，会发现每个搜索结果下面都有一个百度快照&lt;/p&gt;
-&lt;p&gt;点击百度快照，会发现网址的开头有baidu这个词，也就是说这个网页属于百度&lt;/p&gt;
-&lt;p&gt;这就是因为百度会源源不</summary>
-        
-      
-    
-    
-    
-    <category term="码上" scheme="https://y1xi.eu.org/categories/%E7%A0%81%E4%B8%8A/"/>
-    
-    <category term="python" scheme="https://y1xi.eu.org/categories/%E7%A0%81%E4%B8%8A/python/"/>
-    
-    
-    <category term="学习指南" scheme="https://y1xi.eu.org/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
-    
-    <category term="python" scheme="https://y1xi.eu.org/tags/python/"/>
-    
-    <category term="webspider" scheme="https://y1xi.eu.org/tags/webspider/"/>
     
   </entry>
   
