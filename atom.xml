@@ -6,7 +6,7 @@
   <link href="https://y1xi.eu.org/atom.xml" rel="self"/>
   
   <link href="https://y1xi.eu.org/"/>
-  <updated>2023-04-13T12:44:19.649Z</updated>
+  <updated>2023-04-21T15:12:58.519Z</updated>
   <id>https://y1xi.eu.org/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>外国建筑史</title>
+    <link href="https://y1xi.eu.org/History_of_Modern_Foreign_Architecture/"/>
+    <id>https://y1xi.eu.org/History_of_Modern_Foreign_Architecture/</id>
+    <published>2023-04-21T14:42:35.000Z</published>
+    <updated>2023-04-21T15:12:58.519Z</updated>
+    
+    
+    
+    
+    <category term="建筑学" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
+    
+    <category term="漫漫研途" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E6%BC%AB%E6%BC%AB%E7%A0%94%E9%80%94/"/>
+    
+    
+    <category term="考研" scheme="https://y1xi.eu.org/tags/%E8%80%83%E7%A0%94/"/>
+    
+    <category term="建筑史" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E7%AD%91%E5%8F%B2/"/>
+    
+    <category term="外国近现代建筑" scheme="https://y1xi.eu.org/tags/%E5%A4%96%E5%9B%BD%E8%BF%91%E7%8E%B0%E4%BB%A3%E5%BB%BA%E7%AD%91/"/>
+    
+  </entry>
   
   <entry>
     <title>英语语法自用手册</title>
@@ -42,7 +65,7 @@
     <link href="https://y1xi.eu.org/History_of_Foreign_Architecture/"/>
     <id>https://y1xi.eu.org/History_of_Foreign_Architecture/</id>
     <published>2023-02-27T11:29:13.000Z</published>
-    <updated>2023-04-19T06:22:31.985Z</updated>
+    <updated>2023-04-24T07:24:56.642Z</updated>
     
     
       
@@ -593,45 +616,6 @@
     <category term="读书" scheme="https://y1xi.eu.org/tags/%E8%AF%BB%E4%B9%A6/"/>
     
     <category term="反思" scheme="https://y1xi.eu.org/tags/%E5%8F%8D%E6%80%9D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Grasshopper</title>
-    <link href="https://y1xi.eu.org/gh/"/>
-    <id>https://y1xi.eu.org/gh/</id>
-    <published>2022-04-07T06:08:19.000Z</published>
-    <updated>2022-10-21T02:33:22.325Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Grasshopper的本质是对数据层级逻辑的理解与处理   </summary>
-        
-      
-    
-    
-    
-    <category term="建筑学" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
-    
-    <category term="软件" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="pc" scheme="https://y1xi.eu.org/tags/pc/"/>
-    
-    <category term="学习指南" scheme="https://y1xi.eu.org/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
-    
-    <category term="建模" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E6%A8%A1/"/>
-    
-    <category term="建筑" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E7%AD%91/"/>
-    
-    <category term="Rhino" scheme="https://y1xi.eu.org/tags/Rhino/"/>
-    
-    <category term="Grasshopper" scheme="https://y1xi.eu.org/tags/Grasshopper/"/>
     
   </entry>
   
