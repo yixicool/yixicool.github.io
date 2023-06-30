@@ -6,7 +6,7 @@
   <link href="https://y1xi.eu.org/atom.xml" rel="self"/>
   
   <link href="https://y1xi.eu.org/"/>
-  <updated>2023-05-30T10:10:32.361Z</updated>
+  <updated>2023-06-30T10:14:34.812Z</updated>
   <id>https://y1xi.eu.org/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>建筑构造</title>
+    <link href="https://y1xi.eu.org/Structure_of_Architecture/"/>
+    <id>https://y1xi.eu.org/Structure_of_Architecture/</id>
+    <published>2023-05-31T05:13:43.000Z</published>
+    <updated>2023-06-30T10:14:34.812Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;绪论&quot;&gt;&lt;a href=&quot;#绪论&quot; class=&quot;headerlink&quot; title=&quot;绪论&quot;&gt;&lt;/a&gt;绪论&lt;/h1&gt;&lt;h2 id=&quot;构造学习大方向&quot;&gt;&lt;a href=&quot;#构造学习大方向&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="建筑学" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/"/>
+    
+    <category term="漫漫研途" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E6%BC%AB%E6%BC%AB%E7%A0%94%E9%80%94/"/>
+    
+    
+    <category term="考研" scheme="https://y1xi.eu.org/tags/%E8%80%83%E7%A0%94/"/>
+    
+    <category term="建筑构造" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E7%AD%91%E6%9E%84%E9%80%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>外国近现代建筑史</title>
@@ -44,27 +73,6 @@
     <category term="建筑史" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E7%AD%91%E5%8F%B2/"/>
     
     <category term="外国近现代建筑" scheme="https://y1xi.eu.org/tags/%E5%A4%96%E5%9B%BD%E8%BF%91%E7%8E%B0%E4%BB%A3%E5%BB%BA%E7%AD%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>英语语法自用手册</title>
-    <link href="https://y1xi.eu.org/grammar/"/>
-    <id>https://y1xi.eu.org/grammar/</id>
-    <published>2023-04-13T12:36:51.000Z</published>
-    <updated>2023-04-13T12:44:19.649Z</updated>
-    
-    
-    
-    
-    <category term="食用手册" scheme="https://y1xi.eu.org/categories/%E9%A3%9F%E7%94%A8%E6%89%8B%E5%86%8C/"/>
-    
-    
-    <category term="学习指南" scheme="https://y1xi.eu.org/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
-    
-    <category term="效率" scheme="https://y1xi.eu.org/tags/%E6%95%88%E7%8E%87/"/>
-    
-    <category term="English" scheme="https://y1xi.eu.org/tags/English/"/>
     
   </entry>
   
@@ -104,7 +112,7 @@
     <link href="https://y1xi.eu.org/History_of_Chinese_Architecture/"/>
     <id>https://y1xi.eu.org/History_of_Chinese_Architecture/</id>
     <published>2023-01-27T08:13:36.000Z</published>
-    <updated>2023-04-19T04:38:45.101Z</updated>
+    <updated>2023-06-22T08:09:23.511Z</updated>
     
     
       
