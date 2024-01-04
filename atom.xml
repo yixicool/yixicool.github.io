@@ -6,7 +6,7 @@
   <link href="https://y1xi.eu.org/atom.xml" rel="self"/>
   
   <link href="https://y1xi.eu.org/"/>
-  <updated>2023-08-14T13:59:52.738Z</updated>
+  <updated>2024-01-04T17:21:28.399Z</updated>
   <id>https://y1xi.eu.org/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://y1xi.eu.org/Structure_of_Architecture/"/>
     <id>https://y1xi.eu.org/Structure_of_Architecture/</id>
     <published>2023-05-31T05:13:43.000Z</published>
-    <updated>2023-08-14T13:59:52.738Z</updated>
+    <updated>2024-01-04T17:21:28.399Z</updated>
     
     
       
@@ -81,7 +81,7 @@
     <link href="https://y1xi.eu.org/History_of_Foreign_Architecture/"/>
     <id>https://y1xi.eu.org/History_of_Foreign_Architecture/</id>
     <published>2023-02-27T11:29:13.000Z</published>
-    <updated>2023-05-12T09:34:22.700Z</updated>
+    <updated>2023-05-30T10:11:30.971Z</updated>
     
     
       
@@ -130,9 +130,9 @@
     <category term="漫漫研途" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E6%BC%AB%E6%BC%AB%E7%A0%94%E9%80%94/"/>
     
     
-    <category term="考研" scheme="https://y1xi.eu.org/tags/%E8%80%83%E7%A0%94/"/>
-    
     <category term="古建" scheme="https://y1xi.eu.org/tags/%E5%8F%A4%E5%BB%BA/"/>
+    
+    <category term="考研" scheme="https://y1xi.eu.org/tags/%E8%80%83%E7%A0%94/"/>
     
     <category term="建筑史" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E7%AD%91%E5%8F%B2/"/>
     
@@ -211,11 +211,11 @@
     <category term="干巴巴的芝士" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E5%B9%B2%E5%B7%B4%E5%B7%B4%E7%9A%84%E8%8A%9D%E5%A3%AB/"/>
     
     
-    <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
     <category term="建模" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E6%A8%A1/"/>
     
     <category term="建筑" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E7%AD%91/"/>
+    
+    <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
     
     <category term="软件理论" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6%E7%90%86%E8%AE%BA/"/>
     
@@ -303,7 +303,7 @@
     <link href="https://y1xi.eu.org/git/"/>
     <id>https://y1xi.eu.org/git/</id>
     <published>2022-10-06T13:25:03.000Z</published>
-    <updated>2023-01-23T15:46:34.734Z</updated>
+    <updated>2023-01-23T17:09:42.971Z</updated>
     
     
       
@@ -331,7 +331,7 @@
     <link href="https://y1xi.eu.org/gh-two/"/>
     <id>https://y1xi.eu.org/gh-two/</id>
     <published>2022-08-28T15:02:16.000Z</published>
-    <updated>2023-01-23T15:49:13.500Z</updated>
+    <updated>2023-01-23T15:55:43.871Z</updated>
     
     
       
@@ -351,13 +351,13 @@
     <category term="项目实例" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E4%BE%8B/"/>
     
     
-    <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="pc" scheme="https://y1xi.eu.org/tags/pc/"/>
-    
     <category term="建模" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E6%A8%A1/"/>
     
     <category term="建筑" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E7%AD%91/"/>
+    
+    <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="pc" scheme="https://y1xi.eu.org/tags/pc/"/>
     
     <category term="Grasshopper" scheme="https://y1xi.eu.org/tags/Grasshopper/"/>
     
@@ -388,13 +388,13 @@
     <category term="项目实例" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E4%BE%8B/"/>
     
     
-    <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="pc" scheme="https://y1xi.eu.org/tags/pc/"/>
-    
     <category term="建模" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E6%A8%A1/"/>
     
     <category term="建筑" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E7%AD%91/"/>
+    
+    <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="pc" scheme="https://y1xi.eu.org/tags/pc/"/>
     
     <category term="Grasshopper" scheme="https://y1xi.eu.org/tags/Grasshopper/"/>
     
@@ -484,13 +484,13 @@
     <category term="软件" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/"/>
     
     
-    <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="pc" scheme="https://y1xi.eu.org/tags/pc/"/>
-    
     <category term="学习指南" scheme="https://y1xi.eu.org/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
     
     <category term="效率" scheme="https://y1xi.eu.org/tags/%E6%95%88%E7%8E%87/"/>
+    
+    <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="pc" scheme="https://y1xi.eu.org/tags/pc/"/>
     
     <category term="工具" scheme="https://y1xi.eu.org/tags/%E5%B7%A5%E5%85%B7/"/>
     
@@ -521,13 +521,13 @@
     <category term="调色" scheme="https://y1xi.eu.org/categories/%E9%A3%9F%E7%94%A8%E6%89%8B%E5%86%8C/%E8%B0%83%E8%89%B2/"/>
     
     
-    <category term="photoshop" scheme="https://y1xi.eu.org/tags/photoshop/"/>
-    
     <category term="调色" scheme="https://y1xi.eu.org/tags/%E8%B0%83%E8%89%B2/"/>
     
     <category term="Lightroom" scheme="https://y1xi.eu.org/tags/Lightroom/"/>
     
     <category term="色彩科学" scheme="https://y1xi.eu.org/tags/%E8%89%B2%E5%BD%A9%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="photoshop" scheme="https://y1xi.eu.org/tags/photoshop/"/>
     
   </entry>
   
@@ -557,11 +557,11 @@
     <category term="食用手册" scheme="https://y1xi.eu.org/categories/%E9%A3%9F%E7%94%A8%E6%89%8B%E5%86%8C/"/>
     
     
-    <category term="效率" scheme="https://y1xi.eu.org/tags/%E6%95%88%E7%8E%87/"/>
-    
     <category term="浏览器" scheme="https://y1xi.eu.org/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
     
     <category term="Google" scheme="https://y1xi.eu.org/tags/Google/"/>
+    
+    <category term="效率" scheme="https://y1xi.eu.org/tags/%E6%95%88%E7%8E%87/"/>
     
   </entry>
   
@@ -588,17 +588,17 @@
     <category term="干巴巴的芝士" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E5%B9%B2%E5%B7%B4%E5%B7%B4%E7%9A%84%E8%8A%9D%E5%A3%AB/"/>
     
     
-    <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="pc" scheme="https://y1xi.eu.org/tags/pc/"/>
-    
     <category term="学习指南" scheme="https://y1xi.eu.org/tags/%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
     
     <category term="效率" scheme="https://y1xi.eu.org/tags/%E6%95%88%E7%8E%87/"/>
     
-    <category term="工具" scheme="https://y1xi.eu.org/tags/%E5%B7%A5%E5%85%B7/"/>
-    
     <category term="photoshop" scheme="https://y1xi.eu.org/tags/photoshop/"/>
+    
+    <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="pc" scheme="https://y1xi.eu.org/tags/pc/"/>
+    
+    <category term="工具" scheme="https://y1xi.eu.org/tags/%E5%B7%A5%E5%85%B7/"/>
     
     <category term="illustrator" scheme="https://y1xi.eu.org/tags/illustrator/"/>
     
