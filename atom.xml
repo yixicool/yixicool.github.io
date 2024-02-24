@@ -6,7 +6,7 @@
   <link href="https://y1xi.eu.org/atom.xml" rel="self"/>
   
   <link href="https://y1xi.eu.org/"/>
-  <updated>2024-01-04T17:21:28.399Z</updated>
+  <updated>2023-06-30T10:14:34.812Z</updated>
   <id>https://y1xi.eu.org/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://y1xi.eu.org/Structure_of_Architecture/"/>
     <id>https://y1xi.eu.org/Structure_of_Architecture/</id>
     <published>2023-05-31T05:13:43.000Z</published>
-    <updated>2024-01-04T17:21:28.399Z</updated>
+    <updated>2023-06-30T10:14:34.812Z</updated>
     
     
       
@@ -101,9 +101,9 @@
     
     <category term="考研" scheme="https://y1xi.eu.org/tags/%E8%80%83%E7%A0%94/"/>
     
-    <category term="建筑史" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E7%AD%91%E5%8F%B2/"/>
-    
     <category term="外国古代建筑" scheme="https://y1xi.eu.org/tags/%E5%A4%96%E5%9B%BD%E5%8F%A4%E4%BB%A3%E5%BB%BA%E7%AD%91/"/>
+    
+    <category term="建筑史" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E7%AD%91%E5%8F%B2/"/>
     
   </entry>
   
@@ -112,7 +112,7 @@
     <link href="https://y1xi.eu.org/History_of_Chinese_Architecture/"/>
     <id>https://y1xi.eu.org/History_of_Chinese_Architecture/</id>
     <published>2023-01-27T08:13:36.000Z</published>
-    <updated>2023-06-22T08:09:23.511Z</updated>
+    <updated>2024-02-18T16:32:21.630Z</updated>
     
     
       
@@ -351,13 +351,13 @@
     <category term="项目实例" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E4%BE%8B/"/>
     
     
+    <category term="pc" scheme="https://y1xi.eu.org/tags/pc/"/>
+    
     <category term="建模" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E6%A8%A1/"/>
     
     <category term="建筑" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E7%AD%91/"/>
     
     <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="pc" scheme="https://y1xi.eu.org/tags/pc/"/>
     
     <category term="Grasshopper" scheme="https://y1xi.eu.org/tags/Grasshopper/"/>
     
@@ -388,13 +388,13 @@
     <category term="项目实例" scheme="https://y1xi.eu.org/categories/%E5%BB%BA%E7%AD%91%E5%AD%A6/%E8%BD%AF%E4%BB%B6/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E4%BE%8B/"/>
     
     
+    <category term="pc" scheme="https://y1xi.eu.org/tags/pc/"/>
+    
     <category term="建模" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E6%A8%A1/"/>
     
     <category term="建筑" scheme="https://y1xi.eu.org/tags/%E5%BB%BA%E7%AD%91/"/>
     
     <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-    <category term="pc" scheme="https://y1xi.eu.org/tags/pc/"/>
     
     <category term="Grasshopper" scheme="https://y1xi.eu.org/tags/Grasshopper/"/>
     
@@ -488,9 +488,9 @@
     
     <category term="效率" scheme="https://y1xi.eu.org/tags/%E6%95%88%E7%8E%87/"/>
     
-    <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
     <category term="pc" scheme="https://y1xi.eu.org/tags/pc/"/>
+    
+    <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
     
     <category term="工具" scheme="https://y1xi.eu.org/tags/%E5%B7%A5%E5%85%B7/"/>
     
@@ -594,9 +594,9 @@
     
     <category term="photoshop" scheme="https://y1xi.eu.org/tags/photoshop/"/>
     
-    <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
     <category term="pc" scheme="https://y1xi.eu.org/tags/pc/"/>
+    
+    <category term="软件" scheme="https://y1xi.eu.org/tags/%E8%BD%AF%E4%BB%B6/"/>
     
     <category term="工具" scheme="https://y1xi.eu.org/tags/%E5%B7%A5%E5%85%B7/"/>
     
